@@ -1,13 +1,13 @@
-<?php //ymission_6-1.phpiƒƒOƒCƒ“‰æ–Êjz
+<?php //ã€mission_6-1.phpï¼ˆãƒ­ã‚°ã‚¤ãƒ³ç”»é¢ï¼‰ã€‘
 $mail=$_POST["mail"];
 $password1=$_POST["password"];
 $submit1=$_POST["submit1"];
-if($submit1=="ƒƒOƒCƒ“"
+if($submit1=="ãƒ­ã‚°ã‚¤ãƒ³"
 and $mail!=""
 and $password1!=""){
-$dsn="ƒf[ƒ^ƒx[ƒX–¼";
-$user="ƒ†[ƒU[–¼";
-$password="ƒpƒXƒ[ƒh";
+$dsn="ãƒ‡ãƒ¼ã‚¿ãƒ™ãƒ¼ã‚¹å";
+$user="ãƒ¦ãƒ¼ã‚¶ãƒ¼å";
+$password="ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰";
 $pdo=new PDO($dsn,$user,$password);
 $sql="SELECT * FROM tt_623_99sv_coco_com.keijiban1 WHERE adress='$mail'";
 $result=$pdo->query($sql);
@@ -24,14 +24,14 @@ $_SESSION["name"]=$name;
 $_SESSION["adress"]=$mail;
 $_SESSION["password"]=$password1;
 }else{
-echo "<div align='center'><font color='#ff0000'>ƒ[ƒ‹ƒAƒhƒŒƒX‚à‚µ‚­‚ÍƒpƒXƒ[ƒh‚ÉŒë‚è‚ª‚ ‚è‚Ü‚·</font></div><br>";
+echo "<div align='center'><font color='#ff0000'>ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚‚ã—ãã¯ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã«èª¤ã‚ŠãŒã‚ã‚Šã¾ã™</font></div><br>";
 }
 }else{
-if($submit1=="ƒƒOƒCƒ“" and $mail==""){
-echo "<div align='center'><font color='#ff0000'>ƒ[ƒ‹ƒAƒhƒŒƒX‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢</font></div><br>";
+if($submit1=="ãƒ­ã‚°ã‚¤ãƒ³" and $mail==""){
+echo "<div align='center'><font color='#ff0000'>ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„</font></div><br>";
 }
-if($submit1=="ƒƒOƒCƒ“" and $password1==""){
-echo "<div align='center'><font color='#ff0000'>ƒpƒXƒ[ƒh‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢</font></div><br>";
+if($submit1=="ãƒ­ã‚°ã‚¤ãƒ³" and $password1==""){
+echo "<div align='center'><font color='#ff0000'>ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„</font></div><br>";
 }
 }
 ?>
@@ -39,94 +39,94 @@ echo "<div align='center'><font color='#ff0000'>ƒpƒXƒ[ƒh‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢</fo
 <?php
 $submit1=$_POST["submit1"];
 $submit2=$_POST["submit2"];
-if($submit2=="V‹K‰ïˆõ“o˜^"){
+if($submit2=="æ–°è¦ä¼šå“¡ç™»éŒ²"){
 header("location:http://tt-623.99sv-coco.com/mission_6-2.php");
 }
 ?>
 
 <div align="center">
 <form action="mission_6-1.php" method="post">
-<input type="text" name="mail" placeholder="ƒ[ƒ‹ƒAƒhƒŒƒX"><br>
-<input type="text" name="password" placeholder="ƒpƒXƒ[ƒh"><br>
-<input type="submit" name="submit1" value="ƒƒOƒCƒ“"><br>
+<input type="text" name="mail" placeholder="ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹"><br>
+<input type="text" name="password" placeholder="ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰"><br>
+<input type="submit" name="submit1" value="ãƒ­ã‚°ã‚¤ãƒ³"><br>
 <br>
 <br>
-<input type="submit" name="submit2" value="V‹K‰ïˆõ“o˜^">
+<input type="submit" name="submit2" value="æ–°è¦ä¼šå“¡ç™»éŒ²">
 </form>
 </div>
 
 
-<div align="center"> //ymission_6-2.phpiV‹K“o˜^‰æ–Êjz 
+<div align="center"> //ã€mission_6-2.phpï¼ˆæ–°è¦ç™»éŒ²ç”»é¢ï¼‰ã€‘ 
 <form action="mission_6-2.php" method="post">
-<label for="name">ƒjƒbƒNƒl[ƒ€‚ð“ü—Í‚µ‚Ä‰º‚³‚¢</label><br>
-<input type="text" name="name" placeholder="ƒjƒbƒNƒl[ƒ€"><br>
+<label for="name">ãƒ‹ãƒƒã‚¯ãƒãƒ¼ãƒ ã‚’å…¥åŠ›ã—ã¦ä¸‹ã•ã„</label><br>
+<input type="text" name="name" placeholder="ãƒ‹ãƒƒã‚¯ãƒãƒ¼ãƒ "><br>
 <br>
-<label for="pre">‚¨Z‚Ü‚¢‚Ì“s“¹•{Œ§‚ð‚¨‘I‚Ñ‚­‚¾‚³‚¢</label><br>
+<label for="pre">ãŠä½ã¾ã„ã®éƒ½é“åºœçœŒã‚’ãŠé¸ã³ãã ã•ã„</label><br>
 <select name="pre">
-<option value="‰«“êŒ§">‰«“êŒ§</option>
-<option value="Ž­Ž™“‡Œ§">Ž­Ž™“‡Œ§</option>
-<option value="‹{èŒ§">‹{èŒ§</option>
-<option value="‘å•ªŒ§">‘å•ªŒ§</option>
-<option value="ŒF–{Œ§">ŒF–{Œ§</option>
-<option value="’·èŒ§">’·èŒ§</option>
-<option value="²‰êŒ§">²‰êŒ§</option>
-<option value="•Ÿ‰ªŒ§">•Ÿ‰ªŒ§</option>
-<option value="ŽRŒûŒ§">ŽRŒûŒ§</option>
-<option value="L“‡Œ§">L“‡Œ§</option>
-<option value="’¹ŽæŒ§">’¹ŽæŒ§</option>
-<option value="‰ªŽRŒ§">‰ªŽRŒ§</option>
-<option value="“‡ªŒ§">“‡ªŒ§</option>
-<option value="ˆ¤•QŒ§">ˆ¤•QŒ§</option>
-<option value="‚’mŒ§">‚’mŒ§</option>
-<option value="ìŒ§">ìŒ§</option>
-<option value="“¿“‡Œ§">“¿“‡Œ§</option>
-<option value="•ºŒÉŒ§">•ºŒÉŒ§</option>
-<option value="‹ž“s•{">‹ž“s•{</option>
-<option value="Ž ‰êŒ§">Ž ‰êŒ§</option>
-<option value="‘åã•{">‘åã•{</option>
-<option value="˜a‰ÌŽRŒ§">˜a‰ÌŽRŒ§</option>
-<option value="“Þ—ÇŒ§">“Þ—ÇŒ§</option>
-<option value="ŽOdŒ§">ŽOdŒ§</option>
-<option value="ÎìŒ§">ÎìŒ§</option>
-<option value="•ŸˆäŒ§">•ŸˆäŒ§</option>
-<option value="•xŽRŒ§">•xŽRŒ§</option>
-<option value="Šò•ŒŒ§">Šò•ŒŒ§</option>
-<option value="’·–ìŒ§">’·–ìŒ§</option>
-<option value="ˆ¤’mŒ§">ˆ¤’mŒ§</option>
-<option value="Ã‰ªŒ§">Ã‰ªŒ§</option>
-<option value="ŽR—œŒ§">ŽRŒ`Œ§</option>
-<option value="VŠƒŒ§">VŠƒŒ§</option>
-<option value="ŒQ”nŒ§">ŒQ”nŒ§</option>
-<option value="é‹ÊŒ§">é‹ÊŒ§</option>
-<option value="“Œ‹ž“s">“Œ‹ž“s</option>
-<option value="_“ÞìŒ§">_“ÞìŒ§</option>
-<option value="“È–ØŒ§">“È–ØŒ§</option>
-<option value="ˆïéŒ§">ˆïéŒ§</option>
-<option value="ç—tŒ§">ç—tŒ§</option>
-<option value="•Ÿ“‡Œ§"•Ÿ“‡Œ§></option>
-<option value="ŽRŒ`Œ§">ŽRŒ`Œ§</option>
-<option value="‹{éŒ§">‹{éŒ§</option>
-<option value="ŠâŽèŒ§">ŠâŽèŒ§</option>
-<option value="H“cŒ§">H“cŒ§</option>
-<option value="ÂXŒ§">ÂXŒ§</option>
-<option value="–kŠC“¹">–kŠC“¹</option>
+<option value="æ²–ç¸„çœŒ">æ²–ç¸„çœŒ</option>
+<option value="é¹¿å…å³¶çœŒ">é¹¿å…å³¶çœŒ</option>
+<option value="å®®å´ŽçœŒ">å®®å´ŽçœŒ</option>
+<option value="å¤§åˆ†çœŒ">å¤§åˆ†çœŒ</option>
+<option value="ç†Šæœ¬çœŒ">ç†Šæœ¬çœŒ</option>
+<option value="é•·å´ŽçœŒ">é•·å´ŽçœŒ</option>
+<option value="ä½è³€çœŒ">ä½è³€çœŒ</option>
+<option value="ç¦å²¡çœŒ">ç¦å²¡çœŒ</option>
+<option value="å±±å£çœŒ">å±±å£çœŒ</option>
+<option value="åºƒå³¶çœŒ">åºƒå³¶çœŒ</option>
+<option value="é³¥å–çœŒ">é³¥å–çœŒ</option>
+<option value="å²¡å±±çœŒ">å²¡å±±çœŒ</option>
+<option value="å³¶æ ¹çœŒ">å³¶æ ¹çœŒ</option>
+<option value="æ„›åª›çœŒ">æ„›åª›çœŒ</option>
+<option value="é«˜çŸ¥çœŒ">é«˜çŸ¥çœŒ</option>
+<option value="é¦™å·çœŒ">é¦™å·çœŒ</option>
+<option value="å¾³å³¶çœŒ">å¾³å³¶çœŒ</option>
+<option value="å…µåº«çœŒ">å…µåº«çœŒ</option>
+<option value="äº¬éƒ½åºœ">äº¬éƒ½åºœ</option>
+<option value="æ»‹è³€çœŒ">æ»‹è³€çœŒ</option>
+<option value="å¤§é˜ªåºœ">å¤§é˜ªåºœ</option>
+<option value="å’Œæ­Œå±±çœŒ">å’Œæ­Œå±±çœŒ</option>
+<option value="å¥ˆè‰¯çœŒ">å¥ˆè‰¯çœŒ</option>
+<option value="ä¸‰é‡çœŒ">ä¸‰é‡çœŒ</option>
+<option value="çŸ³å·çœŒ">çŸ³å·çœŒ</option>
+<option value="ç¦äº•çœŒ">ç¦äº•çœŒ</option>
+<option value="å¯Œå±±çœŒ">å¯Œå±±çœŒ</option>
+<option value="å²é˜œçœŒ">å²é˜œçœŒ</option>
+<option value="é•·é‡ŽçœŒ">é•·é‡ŽçœŒ</option>
+<option value="æ„›çŸ¥çœŒ">æ„›çŸ¥çœŒ</option>
+<option value="é™å²¡çœŒ">é™å²¡çœŒ</option>
+<option value="å±±æ¢¨çœŒ">å±±å½¢çœŒ</option>
+<option value="æ–°æ½ŸçœŒ">æ–°æ½ŸçœŒ</option>
+<option value="ç¾¤é¦¬çœŒ">ç¾¤é¦¬çœŒ</option>
+<option value="åŸ¼çŽ‰çœŒ">åŸ¼çŽ‰çœŒ</option>
+<option value="æ±äº¬éƒ½">æ±äº¬éƒ½</option>
+<option value="ç¥žå¥ˆå·çœŒ">ç¥žå¥ˆå·çœŒ</option>
+<option value="æ ƒæœ¨çœŒ">æ ƒæœ¨çœŒ</option>
+<option value="èŒ¨åŸŽçœŒ">èŒ¨åŸŽçœŒ</option>
+<option value="åƒè‘‰çœŒ">åƒè‘‰çœŒ</option>
+<option value="ç¦å³¶çœŒ"ç¦å³¶çœŒ></option>
+<option value="å±±å½¢çœŒ">å±±å½¢çœŒ</option>
+<option value="å®®åŸŽçœŒ">å®®åŸŽçœŒ</option>
+<option value="å²©æ‰‹çœŒ">å²©æ‰‹çœŒ</option>
+<option value="ç§‹ç”°çœŒ">ç§‹ç”°çœŒ</option>
+<option value="é’æ£®çœŒ">é’æ£®çœŒ</option>
+<option value="åŒ—æµ·é“">åŒ—æµ·é“</option>
 </select><br>
 <br>
-<label for="adress">ƒ[ƒ‹ƒAƒhƒŒƒX‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢</label><br>
-<input type="text" name="adress" placeholder="ƒ[ƒ‹ƒAƒhƒŒƒX"><br>
-<input type="text" name="check-ad" placeholder="ƒ[ƒ‹ƒAƒhƒŒƒXiÄ“ü—Í)"><br>
+<label for="adress">ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„</label><br>
+<input type="text" name="adress" placeholder="ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹"><br>
+<input type="text" name="check-ad" placeholder="ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ï¼ˆå†å…¥åŠ›)"><br>
 <br>
-<label for="password">ƒpƒXƒ[ƒh‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢</label><br>
-<input type="text" name="password" placeholder="ƒpƒXƒ[ƒh"><br>
-<input type="text" name="check-pass" placeholder="ƒpƒXƒ[ƒhiÄ“ü—Íj"><br>
+<label for="password">ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„</label><br>
+<input type="text" name="password" placeholder="ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰"><br>
+<input type="text" name="check-pass" placeholder="ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ï¼ˆå†å…¥åŠ›ï¼‰"><br>
 <br>
 <p style="border-width: 5px; border-color: black; border-style: double; width:250px;" >
-—˜—p‹K–ñ‚Å‚·
+åˆ©ç”¨è¦ç´„ã§ã™
 </p>
-<input type="checkbox" name="rule" value="—˜—p‹K–ñ">
-—˜—p‹K–ñ‚É“¯ˆÓ‚·‚é<br>
+<input type="checkbox" name="rule" value="åˆ©ç”¨è¦ç´„">
+åˆ©ç”¨è¦ç´„ã«åŒæ„ã™ã‚‹<br>
 <br>
-<input type="submit" name="submit" value="V‹K“o˜^‚·‚é">
+<input type="submit" name="submit" value="æ–°è¦ç™»éŒ²ã™ã‚‹">
 </form>
 </div>
 
@@ -139,10 +139,10 @@ $password1=$_POST["password"];
 $password2=$_POST["check-pass"];
 $rule=$_POST["rule"];
 $submit=$_POST["submit"];
-if($submit=="V‹K“o˜^‚·‚é" ){
-$dsn="ƒf[ƒ^ƒx[ƒX–¼";
-$user="ƒ†[ƒU[–¼";
-$password="ƒpƒXƒ[ƒh";
+if($submit=="æ–°è¦ç™»éŒ²ã™ã‚‹" ){
+$dsn="ãƒ‡ãƒ¼ã‚¿ãƒ™ãƒ¼ã‚¹å";
+$user="ãƒ¦ãƒ¼ã‚¶ãƒ¼å";
+$password="ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰";
 $pdo=new PDO($dsn,$user,$password);
 $sql="SELECT COUNT(adress) FROM tt_623_99sv_coco_com.keijiban1 WHERE adress='$adress'";
 $result=$pdo->query($sql);
@@ -161,7 +161,7 @@ and $adress!=""
 and $adress==$adress1
 and $password1!=""
 and $password1==$password2
-and $rule=="—˜—p‹K–ñ"){
+and $rule=="åˆ©ç”¨è¦ç´„"){
 mb_language("Japanese");
 mb_internal_encoding("UTF-8");
 $rand=mt_rand(0,9);
@@ -169,47 +169,47 @@ $rand1=mt_rand(0,9);
 $rand2=mt_rand(0,9);
 $rand3=mt_rand(0,9);
 $random=$rand.$rand1.$rand2.$rand3;
-$title="‰¼“o˜^Š®—¹‚Ì‚¨’m‚ç‚¹";
-$message=$name."—l‚Ö"."\r\n"
-."‰ïˆõ§ŒfŽ¦”Â‚Ö‚Ì‰¼“o˜^‚ªŠ®—¹‚µ‚Ü‚µ‚½"."\r\n"
-."ƒ†[ƒU[”FØ”Ô†‚Í".$random."‚Å‚·"."\r\n"
-."ƒ†[ƒU[”FØ”Ô†‚ð“ü—Í‚µA“o˜^‚ðŠ®—¹‚³‚¹‚Ä‚­‚¾‚³‚¢";
+$title="ä»®ç™»éŒ²å®Œäº†ã®ãŠçŸ¥ã‚‰ã›";
+$message=$name."æ§˜ã¸"."\r\n"
+."ä¼šå“¡åˆ¶æŽ²ç¤ºæ¿ã¸ã®ä»®ç™»éŒ²ãŒå®Œäº†ã—ã¾ã—ãŸ"."\r\n"
+."ãƒ¦ãƒ¼ã‚¶ãƒ¼èªè¨¼ç•ªå·ã¯".$random."ã§ã™"."\r\n"
+."ãƒ¦ãƒ¼ã‚¶ãƒ¼èªè¨¼ç•ªå·ã‚’å…¥åŠ›ã—ã€ç™»éŒ²ã‚’å®Œäº†ã•ã›ã¦ãã ã•ã„";
 mb_send_mail($adress,$title,$message);
-echo "ƒ[ƒ‹ƒAƒhƒŒƒX‚Éƒ†[ƒU[”FØ”Ô†‚ð‘—M‚µ‚Ü‚µ‚½<br>
+echo "ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã«ãƒ¦ãƒ¼ã‚¶ãƒ¼èªè¨¼ç•ªå·ã‚’é€ä¿¡ã—ã¾ã—ãŸ<br>
 <form action='mission_6-2.php' method='post'>
 <input type='hidden' name='random' value=$random>
 <input type='hidden' name='name1' value=$name>
 <input type='hidden' name='pre1' value=$pre>
 <input type='hidden' name='adress1' value=$adress>
 <input type='hidden' name='password1' value=$password1>
-<label for='check'>ƒ†[ƒU[”FØ”Ô†‚ð“ü—Í‚µ‚Ä‰º‚³‚¢</label><br>
-<input type='text' name='check' placeholder='”Žš4Œ…i”¼Špj'><br>
-<input type='submit' name='submit1' value='Šm”F‚·‚é'>
+<label for='check'>ãƒ¦ãƒ¼ã‚¶ãƒ¼èªè¨¼ç•ªå·ã‚’å…¥åŠ›ã—ã¦ä¸‹ã•ã„</label><br>
+<input type='text' name='check' placeholder='æ•°å­—4æ¡ï¼ˆåŠè§’ï¼‰'><br>
+<input type='submit' name='submit1' value='ç¢ºèªã™ã‚‹'>
 </form>";
 }else{
 if($count>=1){
-echo "<div align='center'><font color='#ff0000'>‚±‚Ìƒ[ƒ‹ƒAƒhƒŒƒX‚ÍŠù‚É“o˜^‚³‚ê‚Ä‚¢‚Ü‚·</font></div><br>";
+echo "<div align='center'><font color='#ff0000'>ã“ã®ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã¯æ—¢ã«ç™»éŒ²ã•ã‚Œã¦ã„ã¾ã™</font></div><br>";
 }
 if($count1>=1){
-echo "<div align='center'><font color='#ff0000'>‚±‚ÌƒjƒbƒNƒl[ƒ€‚ÍŠù‚ÉŽg‚í‚ê‚Ä‚¢‚Ü‚·</font></div><br>";
+echo "<div align='center'><font color='#ff0000'>ã“ã®ãƒ‹ãƒƒã‚¯ãƒãƒ¼ãƒ ã¯æ—¢ã«ä½¿ã‚ã‚Œã¦ã„ã¾ã™</font></div><br>";
 }
 if($adress!=$adress1){
-echo "<div align='center'><font color='#ff0000'>2‚Â‚Ìƒ[ƒ‹ƒAƒhƒŒƒX‚ªˆÙ‚È‚è‚Ü‚·</font></div><br>";
+echo "<div align='center'><font color='#ff0000'>2ã¤ã®ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ãŒç•°ãªã‚Šã¾ã™</font></div><br>";
 }
 if($password1!=$password2){
-echo "<div align='center'><font color='#ff0000'>2‚Â‚ÌƒpƒXƒ[ƒh‚ªˆÙ‚È‚è‚Ü‚·</font></div><br>";
+echo "<div align='center'><font color='#ff0000'>2ã¤ã®ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ãŒç•°ãªã‚Šã¾ã™</font></div><br>";
 }
 if(empty($_POST["rule"])){
-echo "<div align='center'><font color='#ff0000'>—˜—p‹K–ñ‚É“¯ˆÓ‚µ‚Ä‚­‚¾‚³‚¢</font></div><br>";
+echo "<div align='center'><font color='#ff0000'>åˆ©ç”¨è¦ç´„ã«åŒæ„ã—ã¦ãã ã•ã„</font></div><br>";
 }
 if(empty($name)){
-echo "<div align='center'><font color='#ff0000'>ƒjƒbƒNƒl[ƒ€‚ª“ü—Í‚³‚ê‚Ä‚¢‚Ü‚¹‚ñ</font></div><br>";
+echo "<div align='center'><font color='#ff0000'>ãƒ‹ãƒƒã‚¯ãƒãƒ¼ãƒ ãŒå…¥åŠ›ã•ã‚Œã¦ã„ã¾ã›ã‚“</font></div><br>";
 }
 if($adress=="" or $adress1==""){
-echo "<div align='center'><font color='#ff0000'>ƒ[ƒ‹ƒAƒhƒŒƒX‚ª“ü—Í‚³‚ê‚Ä‚¢‚Ü‚¹‚ñ</font></div><br>";
+echo "<div align='center'><font color='#ff0000'>ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ãŒå…¥åŠ›ã•ã‚Œã¦ã„ã¾ã›ã‚“</font></div><br>";
 }
 if($password1=="" or $password2==""){
-echo "<div align='center'><font color='#ff0000'>ƒpƒXƒ[ƒh‚ª“ü—Í‚³‚ê‚Ä‚¢‚Ü‚¹‚ñ</font></div><br>";
+echo "<div align='center'><font color='#ff0000'>ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ãŒå…¥åŠ›ã•ã‚Œã¦ã„ã¾ã›ã‚“</font></div><br>";
 }
 }
 }
@@ -223,15 +223,15 @@ $password1=$_POST["password1"];
 $random1=$_POST["random"];
 $check=$_POST["check"];
 $submit1=$_POST["submit1"];
-if($submit1=="Šm”F‚·‚é"){
+if($submit1=="ç¢ºèªã™ã‚‹"){
 if($random1==$check){
-echo "<div align='center'>“o˜^‚ªŠ®—¹‚µ‚Ü‚µ‚½</div><br>
+echo "<div align='center'>ç™»éŒ²ãŒå®Œäº†ã—ã¾ã—ãŸ</div><br>
 <form action='mission_6-2.php' method='post'>
-<input type='submit' name='submit2' value='ƒƒOƒCƒ“‰æ–Ê‚És‚­'>
+<input type='submit' name='submit2' value='ãƒ­ã‚°ã‚¤ãƒ³ç”»é¢ã«è¡Œã'>
 </form>";
-$dsn="ƒf[ƒ^ƒx[ƒX–¼";
-$user="ƒ†[ƒU[–¼";
-$password="ƒpƒXƒ[ƒh";
+$dsn="ãƒ‡ãƒ¼ã‚¿ãƒ™ãƒ¼ã‚¹å";
+$user="ãƒ¦ãƒ¼ã‚¶ãƒ¼å";
+$password="ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰";
 $pdo=new PDO($dsn,$user,$password);
 $sql="SELECT MAX(number) FROM tt_623_99sv_coco_com.keijiban1";
 $result=$pdo->query($sql);
@@ -247,21 +247,21 @@ $sql->bindParam(":adress",$adress1,PDO::PARAM_STR);
 $sql->bindParam(":password",$password1,PDO::PARAM_STR);
 $sql->execute();
 }else{
-echo "<div align='center'><font color='#ff0000'>ƒ†[ƒU[”FØ”Ô†‚ªˆá‚¢‚Ü‚·</font></div>";
+echo "<div align='center'><font color='#ff0000'>ãƒ¦ãƒ¼ã‚¶ãƒ¼èªè¨¼ç•ªå·ãŒé•ã„ã¾ã™</font></div>";
 }
 }
 ?>
 
 <?php
 $submit3=$_POST["submit2"];
-if($submit3=="ƒƒOƒCƒ“‰æ–Ê‚És‚­"){
+if($submit3=="ãƒ­ã‚°ã‚¤ãƒ³ç”»é¢ã«è¡Œã"){
 header("location:http://tt-623.99sv-coco.com/mission_6-1.php");
 }
 ?>
 
 
 
-<?php //ymission_6-3.phpiV‹K“Še‰æ–Êjz
+<?php //ã€mission_6-3.phpï¼ˆæ–°è¦æŠ•ç¨¿ç”»é¢ï¼‰ã€‘
 session_start();
 $name=$_SESSION["name"];
 $pre=$_SESSION["pre"];
@@ -274,7 +274,7 @@ $submit=$_POST["submit"];
 $gentei=$_POST["pre"];
 $tokumei=$_POST["tokumei"];
 $date=date("Y/m/d H:i:s");
-if($submit=="“Še‚·‚é"
+if($submit=="æŠ•ç¨¿ã™ã‚‹"
 and $gentei!=""
 and $tokumei!=""
 and $comment!=""){
@@ -288,9 +288,9 @@ $tokumei1="1";
 }else{
 $tokumei1="2";
 }
-$dsn="ƒf[ƒ^ƒx[ƒX–¼";
-$user="ƒ†[ƒU[–¼";
-$password="ƒpƒXƒ[ƒh";
+$dsn="ãƒ‡ãƒ¼ã‚¿ãƒ™ãƒ¼ã‚¹å";
+$user="ãƒ¦ãƒ¼ã‚¶ãƒ¼å";
+$password="ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰";
 $pdo=new PDO($dsn,$user,$password);
 $sql="SELECT MAX(number) FROM tt_623_99sv_coco_com.keijiban3";
 $result=$pdo->query($sql);
@@ -308,21 +308,21 @@ $sql->bindParam(":gentei",$gentei1,PDO::PARAM_STR);
 $sql->bindParam(":tokumei",$tokumei1,PDO::PARAM_STR);
 $sql->execute();
 }else{
-if($comment=="" and $submit=="“Še‚·‚é"){
-echo "<font color='#ff0000'>“Še“à—e‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢</font><br>";
+if($comment=="" and $submit=="æŠ•ç¨¿ã™ã‚‹"){
+echo "<font color='#ff0000'>æŠ•ç¨¿å†…å®¹ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„</font><br>";
 }
-if($gentei=="" and $submit=="“Še‚·‚é"){
-echo "<font color='#ff0000'>ŒfŽ¦”Â‚ÌŽí—Þ‚ð‘I‚ñ‚Å‚­‚¾‚³‚¢</font><br>";
+if($gentei=="" and $submit=="æŠ•ç¨¿ã™ã‚‹"){
+echo "<font color='#ff0000'>æŽ²ç¤ºæ¿ã®ç¨®é¡žã‚’é¸ã‚“ã§ãã ã•ã„</font><br>";
 }
-if($tokumei=="" and $submit=="“Še‚·‚é"){
-echo "<font color='#ff0000'>“½–¼Šó–]‚Ì—L–³‚ð‘I‚ñ‚Å‚­‚¾‚³‚¢</font><br>";
+if($tokumei=="" and $submit=="æŠ•ç¨¿ã™ã‚‹"){
+echo "<font color='#ff0000'>åŒ¿åå¸Œæœ›ã®æœ‰ç„¡ã‚’é¸ã‚“ã§ãã ã•ã„</font><br>";
 }
 }
 ?>	
 
-<?php //ƒƒOƒAƒEƒgƒ{ƒ^ƒ“‚ð‰Ÿ‚µ‚½‚Æ‚«
+<?php //ãƒ­ã‚°ã‚¢ã‚¦ãƒˆãƒœã‚¿ãƒ³ã‚’æŠ¼ã—ãŸã¨ã
 $log=$_POST["log"];
-if($log=="ƒƒOƒAƒEƒg‚·‚é"){
+if($log=="ãƒ­ã‚°ã‚¢ã‚¦ãƒˆã™ã‚‹"){
 session_start();
 unset($_SESSION["name"]);
 unset($_SESSION["pre"]);
@@ -332,7 +332,7 @@ header("location:http://tt-623.99sv-coco.com/mission_6-4.php");
 }
 ?>
 
-<?php //•ÔMƒ{ƒ^ƒ“‚ð‰Ÿ‚µ‚½‚Æ‚«
+<?php //è¿”ä¿¡ãƒœã‚¿ãƒ³ã‚’æŠ¼ã—ãŸã¨ã
 $to=$_POST["to"];
 $reply=$_POST["reply"];
 $number3=$_POST["number"];
@@ -341,7 +341,7 @@ $gentei1=$_POST["gentei"];
 $naiyou=$_POST["naiyou"];
 $date3=$_POST["date"];
 $reply1=$_POST["reply1"];
-if($reply=="•ÔM"){
+if($reply=="è¿”ä¿¡"){
 session_start();
 $_SESSION["to"]=$to;
 $_SESSION["name1"]=$name3;
@@ -354,14 +354,14 @@ header("location:http://tt-623.99sv-coco.com/mission_6-5.php");
 }
 ?>
 
-<?php //íœƒ{ƒ^ƒ“‚ð‰Ÿ‚µ‚½‚Æ‚«
+<?php //å‰Šé™¤ãƒœã‚¿ãƒ³ã‚’æŠ¼ã—ãŸã¨ã
 $delete=$_POST["delete"];
 $delto=$_POST["to"];
 $delrep=$_POST["reply1"];
-if($delete=="íœ"){
-$dsn="ƒf[ƒ^ƒx[ƒX–¼";
-$user="ƒ†[ƒU[–¼";
-$password="ƒpƒXƒ[ƒh";
+if($delete=="å‰Šé™¤"){
+$dsn="ãƒ‡ãƒ¼ã‚¿ãƒ™ãƒ¼ã‚¹å";
+$user="ãƒ¦ãƒ¼ã‚¶ãƒ¼å";
+$password="ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰";
 $pdo=new PDO($dsn,$user,$password);
 if($delrep=="0"){
 $sql="SELECT*FROM tt_623_99sv_coco_com.keijiban3 WHERE number='$delto'";
@@ -372,7 +372,7 @@ $delname=$row["name"];
 if($delname==$name){
 echo <<<EOM
 <script type="text/javascript">
-  alert( "–{“–‚Éíœ‚µ‚Ü‚·‚©H" )
+  alert( "æœ¬å½“ã«å‰Šé™¤ã—ã¾ã™ã‹ï¼Ÿ" )
 </script>
 EOM;
 $sql="delete from tt_623_99sv_coco_com.keijiban3 where number='$delto'";
@@ -380,7 +380,7 @@ $results=$pdo->query($sql);
 }else{
 echo <<<EOM
 <script type="text/javascript">
-alert ("‘¼l‚Ì“Še‚Ííœ‚Å‚«‚Ü‚¹‚ñ")
+alert ("ä»–äººã®æŠ•ç¨¿ã¯å‰Šé™¤ã§ãã¾ã›ã‚“")
 </script>
 EOM;
 }
@@ -393,7 +393,7 @@ $delname1=$row["name"];
 if($delname1==$name){
 echo <<<EOM
 <script type="text/javascript">
-alert("–{“–‚Éíœ‚µ‚Ü‚·‚©H")
+alert("æœ¬å½“ã«å‰Šé™¤ã—ã¾ã™ã‹ï¼Ÿ")
 </script>
 EOM;
 $sql="delete from tt_623_99sv_coco_com.reply where num='$delto'";
@@ -401,7 +401,7 @@ $results=$pdo->query($sql);
 }else{
 echo <<<EOM
 <script type="text/javascript">
-alert("‘¼l‚Ì“Še‚Ííœ‚Å‚«‚Ü‚¹‚ñ")
+alert("ä»–äººã®æŠ•ç¨¿ã¯å‰Šé™¤ã§ãã¾ã›ã‚“")
 </script>
 EOM;
 }
@@ -409,14 +409,14 @@ EOM;
 }
 ?>
 
-<?php //•ÒWƒ{ƒ^ƒ“‚ð‰Ÿ‚µ‚½‚Æ‚«
+<?php //ç·¨é›†ãƒœã‚¿ãƒ³ã‚’æŠ¼ã—ãŸã¨ã
 $edit=$_POST["edit"];
 $editto=$_POST["to"];
 $editrep=$_POST["reply1"];
-if($edit=="•ÒW"){
-$dsn="ƒf[ƒ^ƒx[ƒX–¼";
-$user="ƒ†[ƒU[–¼";
-$password="ƒpƒXƒ[ƒh";
+if($edit=="ç·¨é›†"){
+$dsn="ãƒ‡ãƒ¼ã‚¿ãƒ™ãƒ¼ã‚¹å";
+$user="ãƒ¦ãƒ¼ã‚¶ãƒ¼å";
+$password="ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰";
 $pdo=new PDO($dsn,$user,$password);
 if($editrep=="0"){
 $sql="SELECT*FROM tt_623_99sv_coco_com.keijiban3 WHERE number='$editto'";
@@ -426,16 +426,16 @@ $editname=$row["name"];
 $editcom=$row["comment"];
 }
 if($editname==$name){
-echo "<h2>•ÒWƒtƒH[ƒ€</h2><form action='mission_6-3.php' method='post'>
+echo "<h2>ç·¨é›†ãƒ•ã‚©ãƒ¼ãƒ </h2><form action='mission_6-3.php' method='post'>
 <textarea name='editform' cols='50' rows='5'>$editcom</textarea><br>
-<input type='submit' name='editsub' value='•ÒW“à—e‚ð“Še‚·‚é'>
+<input type='submit' name='editsub' value='ç·¨é›†å†…å®¹ã‚’æŠ•ç¨¿ã™ã‚‹'>
 <input type='text' name='zeroichi' value='0'>
 <input type='text' name='ban' value='$editto'>
 </form>";
 }else{
 echo <<<EOM
 <script type="text/javascript">
-alert("‘¼l‚Ì“Še‚Í•ÒW‚Å‚«‚Ü‚¹‚ñ")
+alert("ä»–äººã®æŠ•ç¨¿ã¯ç·¨é›†ã§ãã¾ã›ã‚“")
 </script>
 EOM;
 }
@@ -447,16 +447,16 @@ $editname1=$row["name"];
 $editcom=$row["comment"];
 }
 if($editname1==$name){
-echo "<h2>•ÒWƒtƒH[ƒ€</h2><form action='mission_6-3.php' method='post'>
+echo "<h2>ç·¨é›†ãƒ•ã‚©ãƒ¼ãƒ </h2><form action='mission_6-3.php' method='post'>
 <textarea name='editform' cols='50' rows='5'>$editcom</textarea><br>
-<input type='submit' name='editsub' value='•ÒW“à—e‚ð“Še‚·‚é'>
+<input type='submit' name='editsub' value='ç·¨é›†å†…å®¹ã‚’æŠ•ç¨¿ã™ã‚‹'>
 <input type='text' name='zeroichi' value='1'>
 <input type='text' name='ban' value='$editto'>
 </form>";
 }else{
 echo <<<EOM
 <script type="text/javascript">
-alert("‘¼l‚Ì“Še‚Í•ÒW‚Å‚«‚Ü‚¹‚ñ")
+alert("ä»–äººã®æŠ•ç¨¿ã¯ç·¨é›†ã§ãã¾ã›ã‚“")
 </script>
 EOM;
 }
@@ -464,22 +464,22 @@ EOM;
 }
 ?>
 
-<?php //•ÒW“Šeƒ{ƒ^ƒ“‚ð‰Ÿ‚µ‚½‚Æ‚«
+<?php //ç·¨é›†æŠ•ç¨¿ãƒœã‚¿ãƒ³ã‚’æŠ¼ã—ãŸã¨ã
 $ban=$_POST["ban"];
 $zeroichi=$_POST["zeroichi"];
 $editsub=$_POST["editsub"];
 $editform=$_POST["editform"];
-if($editsub=="•ÒW“à—e‚ð“Še‚·‚é"){
-$dsn="ƒf[ƒ^ƒx[ƒX–¼";
-$user="ƒ†[ƒU[–¼";
-$password="ƒpƒXƒ[ƒh";
+if($editsub=="ç·¨é›†å†…å®¹ã‚’æŠ•ç¨¿ã™ã‚‹"){
+$dsn="ãƒ‡ãƒ¼ã‚¿ãƒ™ãƒ¼ã‚¹å";
+$user="ãƒ¦ãƒ¼ã‚¶ãƒ¼å";
+$password="ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰";
 $pdo=new PDO($dsn,$user,$password);
 if($zeroichi=="0"){
 $sql="update tt_623_99sv_coco_com.keijiban3 set comment='$editform',date='$date' where number='$ban'";
 $result=$pdo->query($sql);
 echo <<<EOM
 <script type="text/javascript">
-alert("–{“–‚É•ÒW“à—e‚ð“Še‚µ‚Ü‚·‚©H")
+alert("æœ¬å½“ã«ç·¨é›†å†…å®¹ã‚’æŠ•ç¨¿ã—ã¾ã™ã‹ï¼Ÿ")
 </script>
 EOM;
 }else{
@@ -487,43 +487,43 @@ $sql="update tt_623_99sv_coco_com.reply set comment='$editform',date='$date' whe
 $results=$pdo->query($sql);
 echo <<<EOM
 <script type="text/javascript">
-alert("–{“–‚É•ÒW“à—e‚ð“Še‚µ‚Ü‚·‚©H")
+alert("æœ¬å½“ã«ç·¨é›†å†…å®¹ã‚’æŠ•ç¨¿ã—ã¾ã™ã‹ï¼Ÿ")
 </script>
 EOM;
 }
 }
 ?>
 
-<h2>‚æ‚¤‚±‚»I
+<h2>ã‚ˆã†ã“ãï¼
 <?php session_start();
 echo $_SESSION["name"]; ?>
-—l</h2>
+æ§˜</h2>
 
-<div style="width: 100%; color:white; background-color:#afeeee;"><a href="#a">V‹K“Še‚ÍƒRƒ`ƒ‰‚©‚ç</a><br>
-<a href="#b"><?php echo $pre;?>ŒÀ’èŒfŽ¦”Â‚ðŒ©‚é</a><br>
-<a href="#c">‘S‘”ÅŒfŽ¦”Â‚ðŒ©‚é</a><br>
-<a href="http://tt-623.99sv-coco.com/mission_6-7.php">V‚µ‚¢ŒfŽ¦”Â‚ðì¬‚·‚é</a><br>
-<a href="http://tt-623.99sv-coco.com/mission_6-6.php">ƒ}ƒCƒAƒJƒEƒ“ƒg</a><br>
-<a href="#111">ƒƒOƒAƒEƒg</a></div>
+<div style="width: 100%; color:white; background-color:#afeeee;"><a href="#a">æ–°è¦æŠ•ç¨¿ã¯ã‚³ãƒãƒ©ã‹ã‚‰</a><br>
+<a href="#b"><?php echo $pre;?>é™å®šæŽ²ç¤ºæ¿ã‚’è¦‹ã‚‹</a><br>
+<a href="#c">å…¨å›½ç‰ˆæŽ²ç¤ºæ¿ã‚’è¦‹ã‚‹</a><br>
+<a href="http://tt-623.99sv-coco.com/mission_6-7.php">æ–°ã—ã„æŽ²ç¤ºæ¿ã‚’ä½œæˆã™ã‚‹</a><br>
+<a href="http://tt-623.99sv-coco.com/mission_6-6.php">ãƒžã‚¤ã‚¢ã‚«ã‚¦ãƒ³ãƒˆ</a><br>
+<a href="#111">ãƒ­ã‚°ã‚¢ã‚¦ãƒˆ</a></div>
 
-<a id="a"></a><div style="width:100%; color:white; background-color:#90ee90;"><h2>V‹K“Še‚ÍƒRƒ`ƒ‰‚©‚ç</h2></div>
+<a id="a"></a><div style="width:100%; color:white; background-color:#90ee90;"><h2>æ–°è¦æŠ•ç¨¿ã¯ã‚³ãƒãƒ©ã‹ã‚‰</h2></div>
 <form action="mission_6-3.php" method="post">
-<textarea name="comment" cols="50" rows="5" placeholder="“Še‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢"></textarea>
-<input type="reset" value="Žæ‚èÁ‚µ"><br>
-<input type="radio" name="pre" value="pre"><?php session_start(); echo $_SESSION["pre"];?>ŒÀ’èŒfŽ¦”Â‚É“Še‚·‚é
-<input type="radio" name="pre" value="nopre">‘S‘”ÅŒfŽ¦”Â‚É“Še‚·‚é<br>
-<input type="radio" name="tokumei" value="tokumei">“½–¼Šó–]
-<input type="radio" name="tokumei" value="notokumei">“½–¼‚ðŠó–]‚µ‚È‚¢<br>
-<input type="submit" name="submit" value="“Še‚·‚é">
+<textarea name="comment" cols="50" rows="5" placeholder="æŠ•ç¨¿ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„"></textarea>
+<input type="reset" value="å–ã‚Šæ¶ˆã—"><br>
+<input type="radio" name="pre" value="pre"><?php session_start(); echo $_SESSION["pre"];?>é™å®šæŽ²ç¤ºæ¿ã«æŠ•ç¨¿ã™ã‚‹
+<input type="radio" name="pre" value="nopre">å…¨å›½ç‰ˆæŽ²ç¤ºæ¿ã«æŠ•ç¨¿ã™ã‚‹<br>
+<input type="radio" name="tokumei" value="tokumei">åŒ¿åå¸Œæœ›
+<input type="radio" name="tokumei" value="notokumei">åŒ¿åã‚’å¸Œæœ›ã—ãªã„<br>
+<input type="submit" name="submit" value="æŠ•ç¨¿ã™ã‚‹">
 </form>
 
 
-<a id="b"></a><div style="width:100%; color:white; background-color:#90ee90;"><h2><?php echo $pre;?>ŒÀ’èŒfŽ¦”Â</h2></div>
+<a id="b"></a><div style="width:100%; color:white; background-color:#90ee90;"><h2><?php echo $pre;?>é™å®šæŽ²ç¤ºæ¿</h2></div>
 <hr>
 <?php
-$dsn="ƒf[ƒ^ƒx[ƒX–¼";
-$user="ƒ†[ƒU[–¼";
-$password="ƒpƒXƒ[ƒh";
+$dsn="ãƒ‡ãƒ¼ã‚¿ãƒ™ãƒ¼ã‚¹å";
+$user="ãƒ¦ãƒ¼ã‚¶ãƒ¼å";
+$password="ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰";
 $pdo=new PDO($dsn,$user,$password);
 $sql="SELECT*FROM tt_623_99sv_coco_com.keijiban3 WHERE gentei='1' and pre='$pre'";
 $results=$pdo->query($sql);
@@ -533,18 +533,18 @@ $comment1=$row["comment"];
 $date1=$row["date"];
 $name1=$row["name"];
 if($row["tokumei"]=="1"){
-$namae1="“½–¼Šó–]";
+$namae1="åŒ¿åå¸Œæœ›";
 $toku="1";
 }else{
 $namae1=$name1;
 $toku=$name1;
 }
-echo "<hr><br>".$number1."F".$namae1."‚³‚ñ‚©‚ç‚Ì“Še".$date1."<br>"; 
+echo "<hr><br>".$number1."ï¼š".$namae1."ã•ã‚“ã‹ã‚‰ã®æŠ•ç¨¿".$date1."<br>"; 
 echo $comment1."<br>";
 echo "<a id='$number1'></a><form action='mission_6-3.php' method='post'>
-<input type='submit' name='reply' value='•ÔM'style='background:white;border:none;'>
-<input type='submit' name='edit' value='•ÒW'style='background:white;border:none;'>
-<input type='submit' name='delete' value='íœ' style='background:white;border:none;'>
+<input type='submit' name='reply' value='è¿”ä¿¡'style='background:white;border:none;'>
+<input type='submit' name='edit' value='ç·¨é›†'style='background:white;border:none;'>
+<input type='submit' name='delete' value='å‰Šé™¤' style='background:white;border:none;'>
 <input type='hidden' name='to' value='$number1'>
 <input type='hidden' name='number' value='$number1'>
 <input type='hidden' name='tokumei' value='$toku'>
@@ -564,7 +564,7 @@ $commentrep=$row["comment"];
 $daterep=$row["date"];
 $tokumeirep=$row["tokumei"];
 if($tokumeirep=="1"){
-$namae="“½–¼Šó–]";
+$namae="åŒ¿åå¸Œæœ›";
 $toku1="1";
 }else{
 $namae=$namerep;
@@ -576,13 +576,13 @@ $henban=$aiterep;
 $henban=$aiterep."a";
 }
 $numrepa=$numrep."a";
-echo $numrep."a:".$namae."‚³‚ñ‚©‚ç‚Ì•ÔM".$daterep."<br>";
+echo $numrep."a:".$namae."ã•ã‚“ã‹ã‚‰ã®è¿”ä¿¡".$daterep."<br>";
 echo "to<a href='#$henban'>$henban</a><br>";
 echo $commentrep."<br>";
 echo "<a id='$numrepa'></a><form action='mission_6-3.php' method='post'>
-<input type='submit' name='reply' value='•ÔM'style='background:white;border:none;'>
-<input type='submit' name='edit' value='•ÒW'style='background:white;border:none;'>
-<input type='submit' name='delete' value='íœ' style='background:white;border:none;'>
+<input type='submit' name='reply' value='è¿”ä¿¡'style='background:white;border:none;'>
+<input type='submit' name='edit' value='ç·¨é›†'style='background:white;border:none;'>
+<input type='submit' name='delete' value='å‰Šé™¤' style='background:white;border:none;'>
 <input type='hidden' name='to' value='$numrep'>
 <input type='hidden' name='number' value='$number1'>
 <input type='hidden' name='tokumei' value='$toku1'>
@@ -596,12 +596,12 @@ echo "<a id='$numrepa'></a><form action='mission_6-3.php' method='post'>
 ?>
 
 
-<a id="c"></a><div style="width:100%; color:white; background-color:#90ee90;"><h2>‘S‘”ÅŒfŽ¦”Â</h2></div>
+<a id="c"></a><div style="width:100%; color:white; background-color:#90ee90;"><h2>å…¨å›½ç‰ˆæŽ²ç¤ºæ¿</h2></div>
 <hr>
 <?php
-$dsn="ƒf[ƒ^ƒx[ƒX–¼";
-$user="ƒ†[ƒU[–¼";
-$password="ƒpƒXƒ[ƒh";
+$dsn="ãƒ‡ãƒ¼ã‚¿ãƒ™ãƒ¼ã‚¹å";
+$user="ãƒ¦ãƒ¼ã‚¶ãƒ¼å";
+$password="ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰";
 $pdo=new PDO($dsn,$user,$password);
 $sql="SELECT*FROM tt_623_99sv_coco_com.keijiban3 WHERE gentei='2'";
 $results=$pdo->query($sql);
@@ -611,18 +611,18 @@ $comment2=$row["comment"];
 $date2=$row["date"];
 $name2=$row["name"];
 if($row["tokumei"]=="1"){
-$namae2="“½–¼Šó–]";
+$namae2="åŒ¿åå¸Œæœ›";
 $toku2="1";
 }else{
 $namae2=$name2;
 $toku2=$name2;
 }
-echo "<hr>".$number2."F".$namae2."‚³‚ñ‚©‚ç‚Ì“Še".$date2."<br>";
+echo "<hr>".$number2."ï¼š".$namae2."ã•ã‚“ã‹ã‚‰ã®æŠ•ç¨¿".$date2."<br>";
 echo $row["comment"]."<br>";
 echo "<a id='$number2'></a><form action='mission_6-3.php' method='post'>
-<input type='submit' name='reply' value='•ÔM' style='background:white;border:none;'>
-<input type='submit' name='edit' value='•ÒW'style='background:white;border:none;'>
-<input type='submit' name='delete' value='íœ' style='background:white;border:none;'>
+<input type='submit' name='reply' value='è¿”ä¿¡' style='background:white;border:none;'>
+<input type='submit' name='edit' value='ç·¨é›†'style='background:white;border:none;'>
+<input type='submit' name='delete' value='å‰Šé™¤' style='background:white;border:none;'>
 <input type='hidden' name='to'value='$number2'>
 <input type='hidden' name='number' value='$number2'>
 <input type='hidden' name='tokumei' value='$toku2'>
@@ -642,7 +642,7 @@ $commentrep1=$row["comment"];
 $daterep1=$row["date"];
 $tokumeirep1=$row["tokumei"];
 if($tokumeirep1=="1"){
-$namae3="“½–¼Šó–]";
+$namae3="åŒ¿åå¸Œæœ›";
 $toku3="1";
 }else{
 $namae3=$namerep1;
@@ -654,13 +654,13 @@ $henban1=$aiterep1;
 $henban1=$aiterep1."a";
 }
 $numrepa1=$numrep1."a";
-echo "<a id='$numrepa1'></a>".$numrep1."a:".$namae3."‚³‚ñ‚©‚ç‚Ì•ÔM".$daterep."<br>";
+echo "<a id='$numrepa1'></a>".$numrep1."a:".$namae3."ã•ã‚“ã‹ã‚‰ã®è¿”ä¿¡".$daterep."<br>";
 echo "to<a href='#$henban1'>$henban1</a><br>";
 echo $commentrep1."<br>";
 echo "<form action='mission_6-3.php' method='post'>
-<input type='submit' name='reply' value='•ÔM'style='background:white;border:none;'>
-<input type='submit' name='edit' value='•ÒW'style='background:white;border:none;'>
-<input type='submit' name='delete' value='íœ' style='background:white;border:none;'>
+<input type='submit' name='reply' value='è¿”ä¿¡'style='background:white;border:none;'>
+<input type='submit' name='edit' value='ç·¨é›†'style='background:white;border:none;'>
+<input type='submit' name='delete' value='å‰Šé™¤' style='background:white;border:none;'>
 <input type='hidden' name='to' value='$numrep1'>
 <input type='hidden' name='number' value='$number2'>
 <input type='hidden' name='tokumei' value='$toku3'>
@@ -673,29 +673,29 @@ echo "<form action='mission_6-3.php' method='post'>
 }
 ?>
 
-<a id="111"></a><h2>ƒƒOƒAƒEƒg‚ÍƒRƒ`ƒ‰‚©‚ç</h2>
+<a id="111"></a><h2>ãƒ­ã‚°ã‚¢ã‚¦ãƒˆã¯ã‚³ãƒãƒ©ã‹ã‚‰</h2>
 <form action="mission_6-3.php" method="post">
-<input type="submit" name="log" value="ƒƒOƒAƒEƒg‚·‚é" onClick="alert('–{“–‚ÉƒƒOƒAƒEƒg‚µ‚Ü‚·‚©H');">
+<input type="submit" name="log" value="ãƒ­ã‚°ã‚¢ã‚¦ãƒˆã™ã‚‹" onClick="alert('æœ¬å½“ã«ãƒ­ã‚°ã‚¢ã‚¦ãƒˆã—ã¾ã™ã‹ï¼Ÿ');">
 </form>
 
-<?php //ymission_6-4.phpiƒƒOƒAƒEƒg¬Œ÷‰æ–Êjz
+<?php //ã€mission_6-4.phpï¼ˆãƒ­ã‚°ã‚¢ã‚¦ãƒˆæˆåŠŸç”»é¢ï¼‰ã€‘
 ?>
-<h2>ƒƒOƒAƒEƒg‚É¬Œ÷‚µ‚Ü‚µ‚½</h2>
+<h2>ãƒ­ã‚°ã‚¢ã‚¦ãƒˆã«æˆåŠŸã—ã¾ã—ãŸ</h2>
 
 <form action="mission_6-4.php" method="post">
-<input type="submit" name="return" value="ƒƒOƒCƒ“‰æ–Ê‚É–ß‚é" >
+<input type="submit" name="return" value="ãƒ­ã‚°ã‚¤ãƒ³ç”»é¢ã«æˆ»ã‚‹" >
 </form>
 
 <?php
 $return=$_POST["return"];
-if($return=="ƒƒOƒCƒ“‰æ–Ê‚É–ß‚é"){
+if($return=="ãƒ­ã‚°ã‚¤ãƒ³ç”»é¢ã«æˆ»ã‚‹"){
 header("location:http://tt-623.99sv-coco.com/mission_6-1.php");
 }
 ?>
 
 
 
-<?php //ymission_6-5.phpi’nˆæŒÀ’èŒfŽ¦”ÂE‘S‘”ÅŒfŽ¦”Â‚Ö‚Ì•ÔMƒtƒH[ƒ€jz
+<?php //ã€mission_6-5.phpï¼ˆåœ°åŸŸé™å®šæŽ²ç¤ºæ¿ãƒ»å…¨å›½ç‰ˆæŽ²ç¤ºæ¿ã¸ã®è¿”ä¿¡ãƒ•ã‚©ãƒ¼ãƒ ï¼‰ã€‘
 session_start();
 $to=$_SESSION["to"];
 $name=$_SESSION["name"];
@@ -706,14 +706,14 @@ $name1=$_SESSION["name1"];
 $pre1=$_SESSION["pre1"];
 $reply=$_SESSION["reply"];
 if($name1=="1"){
-$name2="“½–¼Šó–]";
+$name2="åŒ¿åå¸Œæœ›";
 }else{
 $name2=$name1;
 }
 if($pre1=="2"){
-$pre2="‘S‘”ÅŒfŽ¦”Â";
+$pre2="å…¨å›½ç‰ˆæŽ²ç¤ºæ¿";
 }else{
-$pre2=$pre1."ŒÀ’èŒfŽ¦”Â";
+$pre2=$pre1."é™å®šæŽ²ç¤ºæ¿";
 }
 ?>
 
@@ -727,12 +727,12 @@ $tokumei1="1";
 }else{
 $tokumei1="2";
 }
-if($submit=="•ÔM‚·‚é"
+if($submit=="è¿”ä¿¡ã™ã‚‹"
 and $tokumei!=""
 and $comment1!=""){
-$dsn="ƒf[ƒ^ƒx[ƒX–¼";
-$user="ƒ†[ƒU[–¼";
-$password="ƒpƒXƒ[ƒh";
+$dsn="ãƒ‡ãƒ¼ã‚¿ãƒ™ãƒ¼ã‚¹å";
+$user="ãƒ¦ãƒ¼ã‚¶ãƒ¼å";
+$password="ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰";
 $pdo=new PDO($dsn,$user,$password);
 $sql="SELECT MAX(num) FROM tt_623_99sv_coco_com.reply";
 $result=$pdo->query($sql);
@@ -750,20 +750,20 @@ $sql->bindParam(":comment",$comment1,PDO::PARAM_STR);
 $sql->bindParam(":date",$date1,PDO::PARAM_STR);
 $sql->bindParam(":tokumei",$tokumei1,PDO::PARAM_STR);
 $sql->execute();
-echo "•ÔM‚ªŠ®—¹‚µ‚Ü‚µ‚½";
+echo "è¿”ä¿¡ãŒå®Œäº†ã—ã¾ã—ãŸ";
 }else{
 if($tokumei==""){
-echo "“½–¼Šó–]‚Ì—L–³‚ð‘I‘ð‚µ‚Ä‚­‚¾‚³‚¢<br>";
+echo "åŒ¿åå¸Œæœ›ã®æœ‰ç„¡ã‚’é¸æŠžã—ã¦ãã ã•ã„<br>";
 }
 if($comment1==""){
-echo "•ÔM“à—e‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢";
+echo "è¿”ä¿¡å†…å®¹ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„";
 }
 }
 ?>
 
 <?php 
 $submit1=$_POST["submit1"];
-if($submit1=="•ÔM‚ðI—¹‚·‚é"){
+if($submit1=="è¿”ä¿¡ã‚’çµ‚äº†ã™ã‚‹"){
 session_start();
 unset($_SESSION["reply"]);
 unset($_SESSION["to"]);
@@ -779,42 +779,42 @@ header("location:http://tt-623.99sv-coco.com/mission_6-3.php");
 
 
 <div style="width: 100%; color:white; background-color:#afeeee;"><a href="http://tt-623.99sv-coco.com/mission_6-3.php
-">V‹K“Še‚ÍƒRƒ`ƒ‰‚©‚ç</a><br>
-<a href="http://tt-623.99sv-coco.com/mission_6-3.php"><?php echo $SESSION['pre'];?>ŒÀ’èŒfŽ¦”Â‚ðŒ©‚é</a><br>
-<a href="http://tt-623.99sv-coco.com/mission_6-3.php">‘S‘”ÅŒfŽ¦”Â‚ðŒ©‚é</a><br>
-<a href="http://tt-623.99sv-coco.com/mission_6-7.php">V‚µ‚¢ŒfŽ¦”Â‚ðì¬‚·‚é</a><br>
-<a href="http://tt-623.99sv-coco.com/mission_6-6.php">ƒ}ƒCƒAƒJƒEƒ“ƒg</a><br>
-<a href="http://tt-623.99sv-coco.com/mission_6-3.php#111">ƒƒOƒAƒEƒg</a></div>
+">æ–°è¦æŠ•ç¨¿ã¯ã‚³ãƒãƒ©ã‹ã‚‰</a><br>
+<a href="http://tt-623.99sv-coco.com/mission_6-3.php"><?php echo $SESSION['pre'];?>é™å®šæŽ²ç¤ºæ¿ã‚’è¦‹ã‚‹</a><br>
+<a href="http://tt-623.99sv-coco.com/mission_6-3.php">å…¨å›½ç‰ˆæŽ²ç¤ºæ¿ã‚’è¦‹ã‚‹</a><br>
+<a href="http://tt-623.99sv-coco.com/mission_6-7.php">æ–°ã—ã„æŽ²ç¤ºæ¿ã‚’ä½œæˆã™ã‚‹</a><br>
+<a href="http://tt-623.99sv-coco.com/mission_6-6.php">ãƒžã‚¤ã‚¢ã‚«ã‚¦ãƒ³ãƒˆ</a><br>
+<a href="http://tt-623.99sv-coco.com/mission_6-3.php#111">ãƒ­ã‚°ã‚¢ã‚¦ãƒˆ</a></div>
 
-<div style="width:100%; color:black; background-color:#afeeee;"><h2>•ÔMƒtƒH[ƒ€</h2></div>
+<div style="width:100%; color:black; background-color:#afeeee;"><h2>è¿”ä¿¡ãƒ•ã‚©ãƒ¼ãƒ </h2></div>
 
-<?php echo $name2;?>‚³‚ñ‚©‚ç‚Ì“Še@<?php echo $pre2;?><br>
+<?php echo $name2;?>ã•ã‚“ã‹ã‚‰ã®æŠ•ç¨¿@<?php echo $pre2;?><br>
 <?php echo $date;?><br>
 <?php echo $comment;?><br>
 <hr>
 <form action="mission_6-5.php" method="post">
-<textarea name="comment" cols="50" rows="5" placeholder="•ÔM‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢"></textarea>
-<input type="reset" value="Žæ‚èÁ‚µ"><br>
-<input type="radio" name="tokumei" value="tokumei">“½–¼Šó–]
-<input type="radio" name="tokumei" value="notokumei">“½–¼‚ðŠó–]‚µ‚È‚¢<br>
-<input type="submit" name="submit" value="•ÔM‚·‚é">
+<textarea name="comment" cols="50" rows="5" placeholder="è¿”ä¿¡ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„"></textarea>
+<input type="reset" value="å–ã‚Šæ¶ˆã—"><br>
+<input type="radio" name="tokumei" value="tokumei">åŒ¿åå¸Œæœ›
+<input type="radio" name="tokumei" value="notokumei">åŒ¿åã‚’å¸Œæœ›ã—ãªã„<br>
+<input type="submit" name="submit" value="è¿”ä¿¡ã™ã‚‹">
 </form>
 
 <form action="mission_6-5.php" method="post">
-<input type="submit" name="submit1" value="•ÔM‚ðI—¹‚·‚é" onClick="alert('–{“–‚ÉI—¹‚µ‚Ü‚·‚©H');">
+<input type="submit" name="submit1" value="è¿”ä¿¡ã‚’çµ‚äº†ã™ã‚‹" onClick="alert('æœ¬å½“ã«çµ‚äº†ã—ã¾ã™ã‹ï¼Ÿ');">
 </form>
 
 
 
-<?php //ymission_6-6.phpiƒ}ƒCƒy[ƒWjz
+<?php //ã€mission_6-6.phpï¼ˆãƒžã‚¤ãƒšãƒ¼ã‚¸ï¼‰ã€‘
 session_start();
 $mail=$_SESSION["adress"];
 $pre=$_SESSION["pre"];
 $name=$_SESSION["name"];
 $password1=$_SESSION["password"];
-$dsn="ƒf[ƒ^ƒx[ƒX–¼";
-$user="ƒ†[ƒU[–¼";
-$password="ƒpƒXƒ[ƒh";
+$dsn="ãƒ‡ãƒ¼ã‚¿ãƒ™ãƒ¼ã‚¹å";
+$user="ãƒ¦ãƒ¼ã‚¶ãƒ¼å";
+$password="ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰";
 $pdo=new PDO($dsn,$user,$password);
 $newpre=$_POST["pre"];
 $d=$_POST["d"];
@@ -823,19 +823,19 @@ $e=$_POST["e"];
 $newadress=$_POST["adress1"];
 $newadress1=$_POST["adress2"];
 $f=$_POST["f"];
-if($d=="•ÏX‚ð•Û‘¶‚·‚é"){ //“s“¹•{Œ§•ÏX
+if($d=="å¤‰æ›´ã‚’ä¿å­˜ã™ã‚‹"){ //éƒ½é“åºœçœŒå¤‰æ›´
 echo <<<EOM
 <script type="text/javascript">
- alert("–{“–‚É•ÏX‚µ‚Ü‚·‚©H")
+ alert("æœ¬å½“ã«å¤‰æ›´ã—ã¾ã™ã‹ï¼Ÿ")
 </script>
 EOM;
 $sql="update tt_623_99sv_coco_com.keijiban1 set pre='$newpre' where adress='$mail'";
 $result=$pdo->query($sql);
 session_start();
 $_SESSION["pre"]=$newpre;
-echo "•ÏX‚ªŠ®—¹‚µ‚Ü‚µ‚½";
+echo "å¤‰æ›´ãŒå®Œäº†ã—ã¾ã—ãŸ";
 }
-if($e=="•ÏX‚ð•Û‘¶‚·‚é"){ //ƒjƒbƒNƒl[ƒ€•ÏX
+if($e=="å¤‰æ›´ã‚’ä¿å­˜ã™ã‚‹"){ //ãƒ‹ãƒƒã‚¯ãƒãƒ¼ãƒ å¤‰æ›´
 if($newname!=""){
 $sql="SELECT COUNT(name) FROM tt_623_99sv_coco_com.keijiban1 WHERE name='$newname'";
 $result=$pdo->query($sql);
@@ -845,163 +845,163 @@ $count=$row[0];
 if($count=="0"){
 echo <<<EOM
 <script type="text/javascript">
-alert("–{“–‚É•ÏX‚µ‚Ü‚·‚©H")
+alert("æœ¬å½“ã«å¤‰æ›´ã—ã¾ã™ã‹ï¼Ÿ")
 </script>
 EOM;
 $sql="update tt_623_99sv_coco_com.keijiban1 set name='$newname' where adress='$mail'";
 $results=$pdo->query($sql);
 session_start();
 $_SESSION["name"]=$newname;
-echo "•ÏX‚ªŠ®—¹‚µ‚Ü‚µ‚½";
+echo "å¤‰æ›´ãŒå®Œäº†ã—ã¾ã—ãŸ";
 }else{
-echo "<font color='#ff0000'>‚»‚ÌƒjƒbƒNƒl[ƒ€‚ÍŠù‚ÉŽg‚í‚ê‚Ä‚¢‚Ü‚·</font>";
+echo "<font color='#ff0000'>ãã®ãƒ‹ãƒƒã‚¯ãƒãƒ¼ãƒ ã¯æ—¢ã«ä½¿ã‚ã‚Œã¦ã„ã¾ã™</font>";
 }
 }elseif($newname==""){
-echo "<font color='#ff0000'>V‚µ‚¢ƒjƒbƒNƒl[ƒ€‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢</font>";
+echo "<font color='#ff0000'>æ–°ã—ã„ãƒ‹ãƒƒã‚¯ãƒãƒ¼ãƒ ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„</font>";
 }
 }
 $pass=$_POST["pass"];
 $num=$_POST["random"];
 $check=$_POST["check"];
 $newadress2=$_POST["adress1"];
-if($pass=="Šm”F‚·‚é"){ //ƒ[ƒ‹ƒAƒhƒŒƒX•ÏX
+if($pass=="ç¢ºèªã™ã‚‹"){ //ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹å¤‰æ›´
 if($num==$check){
-echo "•ÏX‚ªŠ®—¹‚µ‚Ü‚µ‚½";
+echo "å¤‰æ›´ãŒå®Œäº†ã—ã¾ã—ãŸ";
 $sql="update tt_623_99sv_coco_com.keijiban1 set adress='$newadress2' where adress='$mail'";
 $result=$pdo->query($sql);
 session_start();
 $_SESSION["adress"]=$newadress2;
 }else{
-echo "ƒ†[ƒU[”FØ”Ô†‚ªŠÔˆá‚Á‚Ä‚¢‚Ü‚·";
+echo "ãƒ¦ãƒ¼ã‚¶ãƒ¼èªè¨¼ç•ªå·ãŒé–“é•ã£ã¦ã„ã¾ã™";
 }
 }
 $newpass=$_POST["newpassword"];
 $newpass1=$_POST["newpassword1"];
 $passbutton2=$_POST["i"];
-if($passbutton2=="•ÏX‚ð•Û‘¶‚·‚é"){
+if($passbutton2=="å¤‰æ›´ã‚’ä¿å­˜ã™ã‚‹"){
 if($newpass!=""
 and $newpass==$newpass1){
 $sql="update tt_623_99sv_coco_com.keijiban1 set password='$newpass' where adress='$mail'";
 $result=$pdo->query($sql);
 session_start();
 $_SESSION["password"]=$newpass;
-echo "•ÏX‚ªŠ®—¹‚µ‚Ü‚µ‚½";
+echo "å¤‰æ›´ãŒå®Œäº†ã—ã¾ã—ãŸ";
 }else{
 if($newpass==""
 or $newpass1==""){
-echo "<font color='#ff0000'>V‚µ‚¢ƒpƒXƒ[ƒh‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢</font>";
+echo "<font color='#ff0000'>æ–°ã—ã„ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„</font>";
 }
 if($newpass!=$newpass1){
-echo "<font color='#ff0000'>2‚Â‚ÌƒpƒXƒ[ƒh‚ªˆÙ‚È‚Á‚Ä‚¢‚Ü‚·</font>";
+echo "<font color='#ff0000'>2ã¤ã®ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ãŒç•°ãªã£ã¦ã„ã¾ã™</font>";
 }
 }
 }
 ?>
 
 <div style="width: 100%; color:white; background-color:#afeeee;"><a href="http://tt-623.99sv-coco.com/mission_6-3.php
-">V‹K“Še‚ÍƒRƒ`ƒ‰‚©‚ç</a><br>
-<a href="http://tt-623.99sv-coco.com/mission_6-3.php"><?php echo $SESSION['pre'];?>ŒÀ’èŒfŽ¦”Â‚ðŒ©‚é</a><br>
-<a href="http://tt-623.99sv-coco.com/mission_6-3.php">‘S‘”ÅŒfŽ¦”Â‚ðŒ©‚é</a><br>
-<a href="http://tt-623.99sv-coco.com/mission_6-7.php">V‚µ‚¢ŒfŽ¦”Â‚ðì¬‚·‚é</a><br>
-<a href="http://tt-623.99sv-coco.com/mission_6-6.php">ƒ}ƒCƒAƒJƒEƒ“ƒg</a><br>
-<a href="http://tt-623.99sv-coco.com/mission_6-3.php#111">ƒƒOƒAƒEƒg</a></div>
+">æ–°è¦æŠ•ç¨¿ã¯ã‚³ãƒãƒ©ã‹ã‚‰</a><br>
+<a href="http://tt-623.99sv-coco.com/mission_6-3.php"><?php echo $SESSION['pre'];?>é™å®šæŽ²ç¤ºæ¿ã‚’è¦‹ã‚‹</a><br>
+<a href="http://tt-623.99sv-coco.com/mission_6-3.php">å…¨å›½ç‰ˆæŽ²ç¤ºæ¿ã‚’è¦‹ã‚‹</a><br>
+<a href="http://tt-623.99sv-coco.com/mission_6-7.php">æ–°ã—ã„æŽ²ç¤ºæ¿ã‚’ä½œæˆã™ã‚‹</a><br>
+<a href="http://tt-623.99sv-coco.com/mission_6-6.php">ãƒžã‚¤ã‚¢ã‚«ã‚¦ãƒ³ãƒˆ</a><br>
+<a href="http://tt-623.99sv-coco.com/mission_6-3.php#111">ãƒ­ã‚°ã‚¢ã‚¦ãƒˆ</a></div>
 
-<div style="width:100%; color:black; background-color:#afeeee;"><h2>ƒ}ƒCƒAƒJƒEƒ“ƒg</h2></div>
-<div style="width:100%; color:white; background-color:#90ee90;"><h2>“o˜^“s“¹•{Œ§</h2></div>
+<div style="width:100%; color:black; background-color:#afeeee;"><h2>ãƒžã‚¤ã‚¢ã‚«ã‚¦ãƒ³ãƒˆ</h2></div>
+<div style="width:100%; color:white; background-color:#90ee90;"><h2>ç™»éŒ²éƒ½é“åºœçœŒ</h2></div>
 <?php echo $_SESSION["pre"];?><br>
 <form action="mission_6-6.php" method="post">
-<input type="submit" name="a" value="•ÏX‚·‚é">
+<input type="submit" name="a" value="å¤‰æ›´ã™ã‚‹">
 </form>
 <?php
-$submit=$_POST["a"]; //“s“¹•{Œ§•ÏX
-if($submit=="•ÏX‚·‚é"){
+$submit=$_POST["a"]; //éƒ½é“åºœçœŒå¤‰æ›´
+if($submit=="å¤‰æ›´ã™ã‚‹"){
 echo '<form action="mission_6-6.php" method="post">
 <select name="pre">
-<option value="‰«“êŒ§">‰«“êŒ§</option>
-<option value="Ž­Ž™“‡Œ§">Ž­Ž™“‡Œ§</option>
-<option value="‹{èŒ§">‹{èŒ§</option>
-<option value="‘å•ªŒ§">‘å•ªŒ§</option>
-<option value="ŒF–{Œ§">ŒF–{Œ§</option>
-<option value="’·èŒ§">’·èŒ§</option>
-<option value="²‰êŒ§">²‰êŒ§</option>
-<option value="•Ÿ‰ªŒ§">•Ÿ‰ªŒ§</option>
-<option value="ŽRŒûŒ§">ŽRŒûŒ§</option>
-<option value="L“‡Œ§">L“‡Œ§</option>
-<option value="’¹ŽæŒ§">’¹ŽæŒ§</option>
-<option value="‰ªŽRŒ§">‰ªŽRŒ§</option>
-<option value="“‡ªŒ§">“‡ªŒ§</option>
-<option value="ˆ¤•QŒ§">ˆ¤•QŒ§</option>
-<option value="‚’mŒ§">‚’mŒ§</option>
-<option value="ìŒ§">ìŒ§</option>
-<option value="“¿“‡Œ§">“¿“‡Œ§</option>
-<option value="•ºŒÉŒ§">•ºŒÉŒ§</option>
-<option value="‹ž“s•{">‹ž“s•{</option>
-<option value="Ž ‰êŒ§">Ž ‰êŒ§</option>
-<option value="‘åã•{">‘åã•{</option>
-<option value="˜a‰ÌŽRŒ§">˜a‰ÌŽRŒ§</option>
-<option value="“Þ—ÇŒ§">“Þ—ÇŒ§</option>
-<option value="ŽOdŒ§">ŽOdŒ§</option>
-<option value="ÎìŒ§">ÎìŒ§</option>
-<option value="•ŸˆäŒ§">•ŸˆäŒ§</option>
-<option value="•xŽRŒ§">•xŽRŒ§</option>
-<option value="Šò•ŒŒ§">Šò•ŒŒ§</option>
-<option value="’·–ìŒ§">’·–ìŒ§</option>
-<option value="ˆ¤’mŒ§">ˆ¤’mŒ§</option>
-<option value="Ã‰ªŒ§">Ã‰ªŒ§</option>
-<option value="ŽR—œŒ§">ŽRŒ`Œ§</option>
-<option value="VŠƒŒ§">VŠƒŒ§</option>
-<option value="ŒQ”nŒ§">ŒQ”nŒ§</option>
-<option value="é‹ÊŒ§">é‹ÊŒ§</option>
-<option value="“Œ‹ž“s">“Œ‹ž“s</option>
-<option value="_“ÞìŒ§">_“ÞìŒ§</option>
-<option value="“È–ØŒ§">“È–ØŒ§</option>
-<option value="ˆïéŒ§">ˆïéŒ§</option>
-<option value="ç—tŒ§">ç—tŒ§</option>
-<option value="•Ÿ“‡Œ§"•Ÿ“‡Œ§></option>
-<option value="ŽRŒ`Œ§">ŽRŒ`Œ§</option>
-<option value="‹{éŒ§">‹{éŒ§</option>
-<option value="ŠâŽèŒ§">ŠâŽèŒ§</option>
-<option value="H“cŒ§">H“cŒ§</option>
-<option value="ÂXŒ§">ÂXŒ§</option>
-<option value="–kŠC“¹">–kŠC“¹</option>
+<option value="æ²–ç¸„çœŒ">æ²–ç¸„çœŒ</option>
+<option value="é¹¿å…å³¶çœŒ">é¹¿å…å³¶çœŒ</option>
+<option value="å®®å´ŽçœŒ">å®®å´ŽçœŒ</option>
+<option value="å¤§åˆ†çœŒ">å¤§åˆ†çœŒ</option>
+<option value="ç†Šæœ¬çœŒ">ç†Šæœ¬çœŒ</option>
+<option value="é•·å´ŽçœŒ">é•·å´ŽçœŒ</option>
+<option value="ä½è³€çœŒ">ä½è³€çœŒ</option>
+<option value="ç¦å²¡çœŒ">ç¦å²¡çœŒ</option>
+<option value="å±±å£çœŒ">å±±å£çœŒ</option>
+<option value="åºƒå³¶çœŒ">åºƒå³¶çœŒ</option>
+<option value="é³¥å–çœŒ">é³¥å–çœŒ</option>
+<option value="å²¡å±±çœŒ">å²¡å±±çœŒ</option>
+<option value="å³¶æ ¹çœŒ">å³¶æ ¹çœŒ</option>
+<option value="æ„›åª›çœŒ">æ„›åª›çœŒ</option>
+<option value="é«˜çŸ¥çœŒ">é«˜çŸ¥çœŒ</option>
+<option value="é¦™å·çœŒ">é¦™å·çœŒ</option>
+<option value="å¾³å³¶çœŒ">å¾³å³¶çœŒ</option>
+<option value="å…µåº«çœŒ">å…µåº«çœŒ</option>
+<option value="äº¬éƒ½åºœ">äº¬éƒ½åºœ</option>
+<option value="æ»‹è³€çœŒ">æ»‹è³€çœŒ</option>
+<option value="å¤§é˜ªåºœ">å¤§é˜ªåºœ</option>
+<option value="å’Œæ­Œå±±çœŒ">å’Œæ­Œå±±çœŒ</option>
+<option value="å¥ˆè‰¯çœŒ">å¥ˆè‰¯çœŒ</option>
+<option value="ä¸‰é‡çœŒ">ä¸‰é‡çœŒ</option>
+<option value="çŸ³å·çœŒ">çŸ³å·çœŒ</option>
+<option value="ç¦äº•çœŒ">ç¦äº•çœŒ</option>
+<option value="å¯Œå±±çœŒ">å¯Œå±±çœŒ</option>
+<option value="å²é˜œçœŒ">å²é˜œçœŒ</option>
+<option value="é•·é‡ŽçœŒ">é•·é‡ŽçœŒ</option>
+<option value="æ„›çŸ¥çœŒ">æ„›çŸ¥çœŒ</option>
+<option value="é™å²¡çœŒ">é™å²¡çœŒ</option>
+<option value="å±±æ¢¨çœŒ">å±±å½¢çœŒ</option>
+<option value="æ–°æ½ŸçœŒ">æ–°æ½ŸçœŒ</option>
+<option value="ç¾¤é¦¬çœŒ">ç¾¤é¦¬çœŒ</option>
+<option value="åŸ¼çŽ‰çœŒ">åŸ¼çŽ‰çœŒ</option>
+<option value="æ±äº¬éƒ½">æ±äº¬éƒ½</option>
+<option value="ç¥žå¥ˆå·çœŒ">ç¥žå¥ˆå·çœŒ</option>
+<option value="æ ƒæœ¨çœŒ">æ ƒæœ¨çœŒ</option>
+<option value="èŒ¨åŸŽçœŒ">èŒ¨åŸŽçœŒ</option>
+<option value="åƒè‘‰çœŒ">åƒè‘‰çœŒ</option>
+<option value="ç¦å³¶çœŒ"ç¦å³¶çœŒ></option>
+<option value="å±±å½¢çœŒ">å±±å½¢çœŒ</option>
+<option value="å®®åŸŽçœŒ">å®®åŸŽçœŒ</option>
+<option value="å²©æ‰‹çœŒ">å²©æ‰‹çœŒ</option>
+<option value="ç§‹ç”°çœŒ">ç§‹ç”°çœŒ</option>
+<option value="é’æ£®çœŒ">é’æ£®çœŒ</option>
+<option value="åŒ—æµ·é“">åŒ—æµ·é“</option>
 </select><br>
-<input type="submit" name="d" value="•ÏX‚ð•Û‘¶‚·‚é">
+<input type="submit" name="d" value="å¤‰æ›´ã‚’ä¿å­˜ã™ã‚‹">
 </form>';
 }
 ?>
 
-<div style="width:100%; color:white; background-color:#90ee90;"><h2>“o˜^ƒjƒbƒNƒl[ƒ€</h2></div>
+<div style="width:100%; color:white; background-color:#90ee90;"><h2>ç™»éŒ²ãƒ‹ãƒƒã‚¯ãƒãƒ¼ãƒ </h2></div>
 <?php echo $_SESSION["name"];?><br>
 <form action="mission_6-6.php" method="post">
-<input type="submit" name="b" value="•ÏX‚·‚é">
+<input type="submit" name="b" value="å¤‰æ›´ã™ã‚‹">
 </form>
 <?php 
 $submit1=$_POST["b"];
-if($submit1=="•ÏX‚·‚é"){
+if($submit1=="å¤‰æ›´ã™ã‚‹"){
 echo "<form action='mission_6-6.php' method='post'>
-<input type='text' name='nickname' placeholder='V‚µ‚¢ƒjƒbƒNƒl[ƒ€'><br>
-<input type='submit' name='e' value='•ÏX‚ð•Û‘¶‚·‚é'>
+<input type='text' name='nickname' placeholder='æ–°ã—ã„ãƒ‹ãƒƒã‚¯ãƒãƒ¼ãƒ '><br>
+<input type='submit' name='e' value='å¤‰æ›´ã‚’ä¿å­˜ã™ã‚‹'>
 </form>";
 }
 ?>
 
-<div style="width:100%; color:white; background-color:#90ee90;"><h2>“o˜^ƒ[ƒ‹ƒAƒhƒŒƒX</h2></div>
+<div style="width:100%; color:white; background-color:#90ee90;"><h2>ç™»éŒ²ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹</h2></div>
 <?php echo $_SESSION["adress"];?><br>
 <form action="mission_6-6.php" method="post">
-<input type="submit" name="c" value="•ÏX‚·‚é">
+<input type="submit" name="c" value="å¤‰æ›´ã™ã‚‹">
 </form>
 <?php
 $submit2=$_POST["c"];
-if($submit2=="•ÏX‚·‚é"){
+if($submit2=="å¤‰æ›´ã™ã‚‹"){
 echo "<form action='mission_6-6.php' method='post'>
-<input type='text' name='adress1' placeholder='V‚µ‚¢ƒ[ƒ‹ƒAƒhƒŒƒX'><br>
-<input type='text' name='adress2' placeholder='Šm”F—piÄ“ü—Íj'><br>
-<input type='submit' name='f' value='•ÏX‚ð•Û‘¶‚·‚é'>
+<input type='text' name='adress1' placeholder='æ–°ã—ã„ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹'><br>
+<input type='text' name='adress2' placeholder='ç¢ºèªç”¨ï¼ˆå†å…¥åŠ›ï¼‰'><br>
+<input type='submit' name='f' value='å¤‰æ›´ã‚’ä¿å­˜ã™ã‚‹'>
 </form>";
 }
 ?>
 <?php 
-if($f=="•ÏX‚ð•Û‘¶‚·‚é"){
+if($f=="å¤‰æ›´ã‚’ä¿å­˜ã™ã‚‹"){
 if($newadress!=""
 and $newadress==$newadress1){
 $sql="SELECT COUNT(adress) FROM tt_623_99sv_coco_com.keijiban1 WHERE adress='$newadress'";
@@ -1017,47 +1017,47 @@ $rand1=mt_rand(0,9);
 $rand2=mt_rand(0,9);
 $rand3=mt_rand(0,9);
 $random=$rand.$rand1.$rand2.$rand3;
-$title="ƒ[ƒ‹ƒAƒhƒŒƒX•ÏX‚Ì‚¨’m‚ç‚¹";
-$message=$name."—l‚Ö"."\r\n"
-."ƒ[ƒ‹ƒAƒhƒŒƒX•ÏX‚Í‚Ü‚¾Š®—¹‚µ‚Ä‚¢‚Ü‚¹‚ñ"."\r\n"
-."ƒ†[ƒU[”FØ”Ô†‚Í".$random."‚Å‚·"."\r\n"
-."ƒ†[ƒU[”FØ”Ô†‚ð“ü—Í‚µAƒ[ƒ‹ƒAƒhƒŒƒX•ÏX‚ðŠ®—¹‚³‚¹‚Ä‚­‚¾‚³‚¢";
+$title="ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹å¤‰æ›´ã®ãŠçŸ¥ã‚‰ã›";
+$message=$name."æ§˜ã¸"."\r\n"
+."ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹å¤‰æ›´ã¯ã¾ã å®Œäº†ã—ã¦ã„ã¾ã›ã‚“"."\r\n"
+."ãƒ¦ãƒ¼ã‚¶ãƒ¼èªè¨¼ç•ªå·ã¯".$random."ã§ã™"."\r\n"
+."ãƒ¦ãƒ¼ã‚¶ãƒ¼èªè¨¼ç•ªå·ã‚’å…¥åŠ›ã—ã€ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹å¤‰æ›´ã‚’å®Œäº†ã•ã›ã¦ãã ã•ã„";
 mb_send_mail($newadress,$title,$message);
-echo "V‚µ‚¢ƒ[ƒ‹ƒAƒhƒŒƒX‚Éƒ†[ƒU[”FØ”Ô†‚ð‘—M‚µ‚Ü‚µ‚½<br>
+echo "æ–°ã—ã„ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã«ãƒ¦ãƒ¼ã‚¶ãƒ¼èªè¨¼ç•ªå·ã‚’é€ä¿¡ã—ã¾ã—ãŸ<br>
 <form action='mission_6-6.php' method='post'>
 <input type='text' name='random' value=$random>
 <input type='text' name='adress1' value='$newadress'>
-<label for='check'>ƒ†[ƒU[”FØ”Ô†‚ð“ü—Í‚µ‚Ä‰º‚³‚¢</label><br>
-<input type='text' name='check' placeholder='”Žš4Œ…i”¼Špj'><br>
-<input type='submit' name='pass' value='Šm”F‚·‚é'>
+<label for='check'>ãƒ¦ãƒ¼ã‚¶ãƒ¼èªè¨¼ç•ªå·ã‚’å…¥åŠ›ã—ã¦ä¸‹ã•ã„</label><br>
+<input type='text' name='check' placeholder='æ•°å­—4æ¡ï¼ˆåŠè§’ï¼‰'><br>
+<input type='submit' name='pass' value='ç¢ºèªã™ã‚‹'>
 </form>";
 }else{
-echo "<font color='#ff0000'>‚»‚Ìƒ[ƒ‹ƒAƒhƒŒƒX‚ÍŠù‚É“o˜^‚³‚ê‚Ä‚¢‚Ü‚·</font>";
+echo "<font color='#ff0000'>ãã®ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã¯æ—¢ã«ç™»éŒ²ã•ã‚Œã¦ã„ã¾ã™</font>";
 }
 }
 if($newadress=="" 
 or $newadress1==""){
-echo "<font color='#ff0000'>V‚µ‚¢ƒ[ƒ‹ƒAƒhƒŒƒX‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢</font>";
+echo "<font color='#ff0000'>æ–°ã—ã„ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„</font>";
 }
 if($newadress!=$newadress1){
-echo "<font color='#ff0000'>‚Q‚Â‚Ìƒ[ƒ‹ƒAƒhƒŒƒX‚ªˆÙ‚È‚è‚Ü‚·</font>";
+echo "<font color='#ff0000'>ï¼’ã¤ã®ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ãŒç•°ãªã‚Šã¾ã™</font>";
 }
 }
 ?>
 
-<div style="width:100%; color:white; background-color:#90ee90;"><h2>ƒpƒXƒ[ƒh</h2></div>
+<div style="width:100%; color:white; background-color:#90ee90;"><h2>ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰</h2></div>
 ******
 <form action="mission_6-6.php" method="post">
-<input type="submit" name="g" value="•ÏX‚·‚é">
+<input type="submit" name="g" value="å¤‰æ›´ã™ã‚‹">
 </form>
 
 <?php
 $passbutton=$_POST["g"];
-if($passbutton=="•ÏX‚·‚é"){
-echo "Œ»Ý‚ÌƒpƒXƒ[ƒh‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢<br>
+if($passbutton=="å¤‰æ›´ã™ã‚‹"){
+echo "ç¾åœ¨ã®ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„<br>
 <form action='mission_6-6.php' method='post'>
-<input type='text' name='passwordnow' placeholder='Œ»Ý‚ÌƒpƒXƒ[ƒh'><br>
-<input type='submit' name='h' value='Šm”F‚·‚é'>
+<input type='text' name='passwordnow' placeholder='ç¾åœ¨ã®ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰'><br>
+<input type='submit' name='h' value='ç¢ºèªã™ã‚‹'>
 </form>";
 }
 ?>
@@ -1065,25 +1065,25 @@ echo "Œ»Ý‚ÌƒpƒXƒ[ƒh‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢<br>
 <?php 
 $passwordnow=$_POST["passwordnow"];
 $passbutton1=$_POST["h"];
-if($passbutton1=="Šm”F‚·‚é"){
+if($passbutton1=="ç¢ºèªã™ã‚‹"){
 if($passwordnow==$password1){
-echo "V‚µ‚¢ƒpƒXƒ[ƒh‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢<br>
+echo "æ–°ã—ã„ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„<br>
 <form action='mission_6-6.php' method='post'>
-<input type='text' name='newpassword' placeholder='V‚µ‚¢ƒpƒXƒ[ƒh'><br>
-<input type='text' name='newpassword1' placeholder='Šm”F—p(Ä“ü—Í)'><br>
-<input type='submit' name='i' value='•ÏX‚ð•Û‘¶‚·‚é'>
+<input type='text' name='newpassword' placeholder='æ–°ã—ã„ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰'><br>
+<input type='text' name='newpassword1' placeholder='ç¢ºèªç”¨(å†å…¥åŠ›)'><br>
+<input type='submit' name='i' value='å¤‰æ›´ã‚’ä¿å­˜ã™ã‚‹'>
 </form>";
 }else{
-echo "<font color='#ff0000'>ƒpƒXƒ[ƒh‚ªŠÔˆá‚Á‚Ä‚¢‚Ü‚·</font>";
+echo "<font color='#ff0000'>ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ãŒé–“é•ã£ã¦ã„ã¾ã™</font>";
 }
 }
 ?>
 
 
-<?php //ymission_6-7.phpiƒXƒŒƒbƒhì¬•ƒXƒŒƒbƒhŒŸõ‰æ–Êjz
-$dsn="ƒf[ƒ^ƒx[ƒX–¼";
-$user="ƒ†[ƒU[–¼";
-$password="ƒpƒXƒ[ƒh";
+<?php //ã€mission_6-7.phpï¼ˆã‚¹ãƒ¬ãƒƒãƒ‰ä½œæˆï¼†ã‚¹ãƒ¬ãƒƒãƒ‰æ¤œç´¢ç”»é¢ï¼‰ã€‘
+$dsn="ãƒ‡ãƒ¼ã‚¿ãƒ™ãƒ¼ã‚¹å";
+$user="ãƒ¦ãƒ¼ã‚¶ãƒ¼å";
+$password="ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰";
 $pdo=new PDO($dsn,$user,$password);
 $sql="SELECT COUNT(*) FROM information_schema.tables WHERE table_schema='tt_623_99sv_coco_com'";
 $result=$pdo->query($sql);
@@ -1094,7 +1094,7 @@ $tablenum=$table+1;
 $keijiname=$_POST["keijiname"];
 $syoukai=$_POST["syoukai"];
 $submit=$_POST["submit"];
-if($submit=="ì¬‚·‚é"){
+if($submit=="ä½œæˆã™ã‚‹"){
 if($keijiname!=""
 and $syoukai!=""){
 $sql=$pdo->prepare("INSERT INTO tt_623_99sv_coco_com.keijiname(id,name,syoukai)
@@ -1117,10 +1117,10 @@ $_SESSION["tablenum"]=$tablenum;
 header("location:http://tt-623.99sv-coco.com/mission_6-8.php");
 }else{
 if($keijiname==""){
-echo "<font color='#ff0000'>ŒfŽ¦”Â‚Ì–¼‘O‚ðŒˆ‚ß‚Ä‚­‚¾‚³‚¢</font><br>";
+echo "<font color='#ff0000'>æŽ²ç¤ºæ¿ã®åå‰ã‚’æ±ºã‚ã¦ãã ã•ã„</font><br>";
 }
 if($syoukai==""){
-echo "<font color='#ff0000'>Ð‰î•¶‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢</font>";
+echo "<font color='#ff0000'>ç´¹ä»‹æ–‡ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„</font>";
 }
 }
 }
@@ -1129,7 +1129,7 @@ echo "<font color='#ff0000'>Ð‰î•¶‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢</font>";
 <?php 
 $topage=$_POST["topage"];
 $keijinum2=$_POST["keijinum"];
-if($topage=="‚±‚Ìƒy[ƒW‚És‚­"){
+if($topage=="ã“ã®ãƒšãƒ¼ã‚¸ã«è¡Œã"){
 session_start();
 $_SESSION["tablenum"]=$keijinum2;
 header("location:http://tt-623.99sv-coco.com/mission_6-8.php");
@@ -1138,36 +1138,36 @@ header("location:http://tt-623.99sv-coco.com/mission_6-8.php");
 
 
 <div style="width: 100%; color:white; background-color:#afeeee;"><a href="http://tt-623.99sv-coco.com/mission_6-3.php
-">V‹K“Še‚ÍƒRƒ`ƒ‰‚©‚ç</a><br>
-<a href="http://tt-623.99sv-coco.com/mission_6-3.php"><?php echo $SESSION['pre'];?>ŒÀ’èŒfŽ¦”Â‚ðŒ©‚é</a><br>
-<a href="http://tt-623.99sv-coco.com/mission_6-3.php">‘S‘”ÅŒfŽ¦”Â‚ðŒ©‚é</a><br>
-<a href="http://tt-623.99sv-coco.com/mission_6-7.php">V‚µ‚¢ŒfŽ¦”Â‚ðì¬‚·‚é</a><br>
-<a href="http://tt-623.99sv-coco.com/mission_6-6.php">ƒ}ƒCƒAƒJƒEƒ“ƒg</a><br>
-<a href="http://tt-623.99sv-coco.com/mission_6-3.php#111">ƒƒOƒAƒEƒg</a></div>
+">æ–°è¦æŠ•ç¨¿ã¯ã‚³ãƒãƒ©ã‹ã‚‰</a><br>
+<a href="http://tt-623.99sv-coco.com/mission_6-3.php"><?php echo $SESSION['pre'];?>é™å®šæŽ²ç¤ºæ¿ã‚’è¦‹ã‚‹</a><br>
+<a href="http://tt-623.99sv-coco.com/mission_6-3.php">å…¨å›½ç‰ˆæŽ²ç¤ºæ¿ã‚’è¦‹ã‚‹</a><br>
+<a href="http://tt-623.99sv-coco.com/mission_6-7.php">æ–°ã—ã„æŽ²ç¤ºæ¿ã‚’ä½œæˆã™ã‚‹</a><br>
+<a href="http://tt-623.99sv-coco.com/mission_6-6.php">ãƒžã‚¤ã‚¢ã‚«ã‚¦ãƒ³ãƒˆ</a><br>
+<a href="http://tt-623.99sv-coco.com/mission_6-3.php#111">ãƒ­ã‚°ã‚¢ã‚¦ãƒˆ</a></div>
 
-<div style="width:100%; color:black; background-color:#afeeee;"><h2>V‹KŒfŽ¦”Âì¬</h2></div>
+<div style="width:100%; color:black; background-color:#afeeee;"><h2>æ–°è¦æŽ²ç¤ºæ¿ä½œæˆ</h2></div>
 
 <form action="mission_6-7.php" method="post">
-<input type="text" name="keijiname" placeholder="ŒfŽ¦”Â–¼"><br>
-<textarea name="syoukai" cols="50" rows="5" placeholder="ŒfŽ¦”Â‚ÌÐ‰î•¶‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢"></textarea><br>
-<input type="submit" name="submit" value="ì¬‚·‚é"><br>
+<input type="text" name="keijiname" placeholder="æŽ²ç¤ºæ¿å"><br>
+<textarea name="syoukai" cols="50" rows="5" placeholder="æŽ²ç¤ºæ¿ã®ç´¹ä»‹æ–‡ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„"></textarea><br>
+<input type="submit" name="submit" value="ä½œæˆã™ã‚‹"><br>
 
 
-<div style="width:100%; color:white; background-color:#afeeee;"><h2>ŒfŽ¦”Âˆê——</h2></div>
+<div style="width:100%; color:white; background-color:#afeeee;"><h2>æŽ²ç¤ºæ¿ä¸€è¦§</h2></div>
 <span style="float:right;">
-<div style="width:100%; background-color:#e6e6fa;">ŒfŽ¦”Â–¼ŒŸõ<br>
+<div style="width:100%; background-color:#e6e6fa;">æŽ²ç¤ºæ¿åæ¤œç´¢<br>
 <form action="mission_6-7.php" method="post">
-<input type="text" name="aaa" placeholder="ŒfŽ¦”Â–¼"><br>
-<input type="submit" name="bbb" value="ŒŸõ‚·‚é"></div>
+<input type="text" name="aaa" placeholder="æŽ²ç¤ºæ¿å"><br>
+<input type="submit" name="bbb" value="æ¤œç´¢ã™ã‚‹"></div>
 
 <?php 
 $aaa=$_POST["aaa"];
 $bbb=$_POST["bbb"];
-if($bbb=="ŒŸõ‚·‚é"){
+if($bbb=="æ¤œç´¢ã™ã‚‹"){
 if($aaa!=""){
-$dsn="ƒf[ƒ^ƒx[ƒX–¼";
-$user="ƒ†[ƒU[–¼";
-$password="ƒpƒXƒ[ƒh";
+$dsn="ãƒ‡ãƒ¼ã‚¿ãƒ™ãƒ¼ã‚¹å";
+$user="ãƒ¦ãƒ¼ã‚¶ãƒ¼å";
+$password="ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰";
 $pdo=new PDO($dsn,$user,$password);
 $sql="SELECT*FROM tt_623_99sv_coco_com.keijiname WHERE name LIKE '%$aaa%'";
 $result=$pdo->query($sql);
@@ -1175,15 +1175,15 @@ foreach($result as $row){
 $tablenum2=$row["id"];
 $tablename2=$row["name"];
 $syoukai2=$row["syoukai"];
-echo "y".$tablename2."z<br>".$syoukai2."<br>
+echo "ã€".$tablename2."ã€‘<br>".$syoukai2."<br>
 <form action='mission_6-7.php' method='post'>
 <input type='text' name='keijinum' value='$tablenum2'>
-<input type='submit' name='topage' value='‚±‚Ìƒy[ƒW‚És‚­'>
+<input type='submit' name='topage' value='ã“ã®ãƒšãƒ¼ã‚¸ã«è¡Œã'>
 </form><br>";
 }
 }else{
 if($aaa==""){
-echo "<font color='#ff0000'>ŒfŽ¦”Â–¼‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢</font>";
+echo "<font color='#ff0000'>æŽ²ç¤ºæ¿åã‚’å…¥åŠ›ã—ã¦ãã ã•ã„</font>";
 }
 }
 }
@@ -1191,7 +1191,7 @@ echo "<font color='#ff0000'>ŒfŽ¦”Â–¼‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢</font>";
 </span>
 
 <?php
-$dsn="ƒf[ƒ^ƒx[ƒX–¼";
+$dsn="ãƒ‡ãƒ¼ã‚¿ãƒ™ãƒ¼ã‚¹å";
 $user="tt-623.99sv-coco";
 $password="Vw54kZC7";
 $pdo=new PDO($dsn,$user,$password);
@@ -1201,22 +1201,22 @@ foreach($result as $row){
 $tablename1=$row["name"];
 $syoukai1=$row["syoukai"];
 $tablenum1=$row["id"];
-echo "y".$tablename1."z<br>".$syoukai1.
+echo "ã€".$tablename1."ã€‘<br>".$syoukai1.
 "<form action='mission_6-7.php' method='post'>
 <input type='hidden' name='keijinum' value='$tablenum1'>
-<input type='submit' name='topage' value='‚±‚Ìƒy[ƒW‚És‚­'>
+<input type='submit' name='topage' value='ã“ã®ãƒšãƒ¼ã‚¸ã«è¡Œã'>
 </form><br>";
 }
 ?>
 
 
-<?php //ymission_6-8.phpiŠeƒXƒŒƒbƒh‚ÌV‹K“Še‰æ–Êjz
+<?php //ã€mission_6-8.phpï¼ˆå„ã‚¹ãƒ¬ãƒƒãƒ‰ã®æ–°è¦æŠ•ç¨¿ç”»é¢ï¼‰ã€‘
 session_start();
 $tablenum=$_SESSION["tablenum"];
 $name=$_SESSION["name"];
-$dsn="ƒf[ƒ^ƒx[ƒX–¼";
-$user="ƒ†[ƒU[–¼";
-$password="ƒpƒXƒ[ƒh";
+$dsn="ãƒ‡ãƒ¼ã‚¿ãƒ™ãƒ¼ã‚¹å";
+$user="ãƒ¦ãƒ¼ã‚¶ãƒ¼å";
+$password="ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰";
 $pdo=new PDO($dsn,$user,$password);
 $sql="SELECT*FROM tt_623_99sv_coco_com.keijiname WHERE id='$tablenum'";
 $result=$pdo->query($sql);
@@ -1231,7 +1231,7 @@ $comment=$_POST["comment"];
 $submit=$_POST["submit"];
 $tokumei=$_POST["tokumei"];
 $date=date("Y/m/d H:i:s");
-if($submit=="“Še‚·‚é"
+if($submit=="æŠ•ç¨¿ã™ã‚‹"
 and $tokumei!=""
 and $comment!=""){
 if($tokumei=="tokumei"){
@@ -1239,9 +1239,9 @@ $tokumei1="1";
 }else{
 $tokumei1="2";
 }
-$dsn="ƒf[ƒ^ƒx[ƒX–¼";
-$user="ƒ†[ƒU[–¼";
-$password="ƒpƒXƒ[ƒh";
+$dsn="ãƒ‡ãƒ¼ã‚¿ãƒ™ãƒ¼ã‚¹å";
+$user="ãƒ¦ãƒ¼ã‚¶ãƒ¼å";
+$password="ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰";
 $pdo=new PDO($dsn,$user,$password);
 $sql="SELECT MAX(id) FROM tt_623_99sv_coco_com.makekeiji$tablenum";
 $result=$pdo->query($sql);
@@ -1259,11 +1259,11 @@ $sql->bindParam(":tokumei",$tokumei1,PDO::PARAM_STR);
 $sql->bindParam(":hensin",$hensin,PDO::PARAM_STR);
 $sql->execute();
 }else{
-if($comment=="" and $submit=="“Še‚·‚é"){
-echo "<font color='#ff0000'>“Še“à—e‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢</font><br>";
+if($comment=="" and $submit=="æŠ•ç¨¿ã™ã‚‹"){
+echo "<font color='#ff0000'>æŠ•ç¨¿å†…å®¹ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„</font><br>";
 }
-if($tokumei=="" and $submit=="“Še‚·‚é"){
-echo "<font color='#ff0000'>“½–¼Šó–]‚Ì—L–³‚ð‘I‚ñ‚Å‚­‚¾‚³‚¢</font><br>";
+if($tokumei=="" and $submit=="æŠ•ç¨¿ã™ã‚‹"){
+echo "<font color='#ff0000'>åŒ¿åå¸Œæœ›ã®æœ‰ç„¡ã‚’é¸ã‚“ã§ãã ã•ã„</font><br>";
 }
 }
 ?>	
@@ -1271,7 +1271,7 @@ echo "<font color='#ff0000'>“½–¼Šó–]‚Ì—L–³‚ð‘I‚ñ‚Å‚­‚¾‚³‚¢</font><br>";
 <?php 
 $reply=$_POST["reply"];
 $to=$_POST["to"];
-if($reply=="©•ÔM"){
+if($reply=="â†è¿”ä¿¡"){
 session_start();
 $_SESSION["to"]=$to;
 header("location:http://tt-623.99sv-coco.com/mission_6-9.php");
@@ -1279,30 +1279,30 @@ header("location:http://tt-623.99sv-coco.com/mission_6-9.php");
 ?>
 
 
-<div style="width: 100%; color:white; background-color:#afeeee;"><a href="#a">V‹K“Še‚ÍƒRƒ`ƒ‰‚©‚ç</a><br>
-<a href="http://tt-623.99sv-coco.com/mission_6-3.php"><?php echo $SESSION['pre'];?>ŒÀ’èŒfŽ¦”Â‚ðŒ©‚é</a><br>
-<a href="http://tt-623.99sv-coco.com/mission_6-3.php">‘S‘”ÅŒfŽ¦”Â‚ðŒ©‚é</a><br>
-<a href="http://tt-623.99sv-coco.com/mission_6-7.php">V‚µ‚¢ŒfŽ¦”Â‚ðì¬‚·‚é</a><br>
-<a href="http://tt-623.99sv-coco.com/mission_6-6.php">ƒ}ƒCƒAƒJƒEƒ“ƒg</a><br>
-<a href="http://tt-623.99sv-coco.com/mission_6-3.php#111">ƒƒOƒAƒEƒg</a></div>
+<div style="width: 100%; color:white; background-color:#afeeee;"><a href="#a">æ–°è¦æŠ•ç¨¿ã¯ã‚³ãƒãƒ©ã‹ã‚‰</a><br>
+<a href="http://tt-623.99sv-coco.com/mission_6-3.php"><?php echo $SESSION['pre'];?>é™å®šæŽ²ç¤ºæ¿ã‚’è¦‹ã‚‹</a><br>
+<a href="http://tt-623.99sv-coco.com/mission_6-3.php">å…¨å›½ç‰ˆæŽ²ç¤ºæ¿ã‚’è¦‹ã‚‹</a><br>
+<a href="http://tt-623.99sv-coco.com/mission_6-7.php">æ–°ã—ã„æŽ²ç¤ºæ¿ã‚’ä½œæˆã™ã‚‹</a><br>
+<a href="http://tt-623.99sv-coco.com/mission_6-6.php">ãƒžã‚¤ã‚¢ã‚«ã‚¦ãƒ³ãƒˆ</a><br>
+<a href="http://tt-623.99sv-coco.com/mission_6-3.php#111">ãƒ­ã‚°ã‚¢ã‚¦ãƒˆ</a></div>
 
 <div style="width:100%; color:black; background-color:#afeeee;">
-<h2>y<?php echo $keijiname;?>z<br>
+<h2>ã€<?php echo $keijiname;?>ã€‘<br>
 <?php echo $syoukai;?></h2></div>
 
-<a id="a"></a><div style="width:100%; color:white; background-color:#90ee90;"><h2>V‹K“Še‚ÍƒRƒ`ƒ‰‚©‚ç</h2></div>
+<a id="a"></a><div style="width:100%; color:white; background-color:#90ee90;"><h2>æ–°è¦æŠ•ç¨¿ã¯ã‚³ãƒãƒ©ã‹ã‚‰</h2></div>
 <form action="mission_6-8.php" method="post">
-<textarea name="comment" cols="50" rows="5" placeholder="“Še‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢"></textarea>
-<input type="reset" value="Žæ‚èÁ‚µ"><br>
-<input type="radio" name="tokumei" value="tokumei">“½–¼Šó–]
-<input type="radio" name="tokumei" value="notokumei">“½–¼‚ðŠó–]‚µ‚È‚¢<br>
-<input type="submit" name="submit" value="“Še‚·‚é">
+<textarea name="comment" cols="50" rows="5" placeholder="æŠ•ç¨¿ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„"></textarea>
+<input type="reset" value="å–ã‚Šæ¶ˆã—"><br>
+<input type="radio" name="tokumei" value="tokumei">åŒ¿åå¸Œæœ›
+<input type="radio" name="tokumei" value="notokumei">åŒ¿åã‚’å¸Œæœ›ã—ãªã„<br>
+<input type="submit" name="submit" value="æŠ•ç¨¿ã™ã‚‹">
 </form>
 
 <?php 
-$dsn="ƒf[ƒ^ƒx[ƒX–¼";
-$user="ƒ†[ƒU[–¼";
-$password="ƒpƒXƒ[ƒh";
+$dsn="ãƒ‡ãƒ¼ã‚¿ãƒ™ãƒ¼ã‚¹å";
+$user="ãƒ¦ãƒ¼ã‚¶ãƒ¼å";
+$password="ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰";
 $pdo=new PDO($dsn,$user,$password);
 $sql="SELECT*FROM tt_623_99sv_coco_com.makekeiji$tablenum";
 $result=$pdo->query($sql);
@@ -1314,7 +1314,7 @@ $date1=$row["date"];
 $tokumei2=$row["tokumei"];
 $hensin1=$row["hensin"];
 if($tokumei2=="1"){
-$tokumei3="“½–¼Šó–]";
+$tokumei3="åŒ¿åå¸Œæœ›";
 }else{
 $tokumei3=$name1;
 }
@@ -1324,17 +1324,17 @@ $hensin2="to".$hensin1;
 $hensin2="";
 }
 echo "<a id='$id'></a><a href='#$hensin1'>$hensin2</a><br>".
-$id."<>".$tokumei3."‚³‚ñ‚©‚ç‚Ì“Še<>".$date1."<br>".
+$id."<>".$tokumei3."ã•ã‚“ã‹ã‚‰ã®æŠ•ç¨¿<>".$date1."<br>".
 $comment1."<br>";
 echo "<form action='mission_6-8.php' method='post'>
-<input type='submit' name='reply' value='©•ÔM'style='background:white;border:none;'>
+<input type='submit' name='reply' value='â†è¿”ä¿¡'style='background:white;border:none;'>
 <input type='hidden' name='to' value='$id'>
 </form><br>";
 }
 ?>
 
 
-<?php //ymission_6-9.phpiŠeƒXƒŒƒbƒh‚Ì“Še‚Ö‚Ì•ÔMƒtƒH[ƒ€jz
+<?php //ã€mission_6-9.phpï¼ˆå„ã‚¹ãƒ¬ãƒƒãƒ‰ã®æŠ•ç¨¿ã¸ã®è¿”ä¿¡ãƒ•ã‚©ãƒ¼ãƒ ï¼‰ã€‘
 session_start();
 $to=$_SESSION["to"];
 $tablenum=$_SESSION["tablenum"];
@@ -1348,12 +1348,12 @@ $tokumei1="1";
 }else{
 $tokumei1="2";
 }
-if($submit=="•ÔM‚·‚é"){
+if($submit=="è¿”ä¿¡ã™ã‚‹"){
 if($comment!=""
 and $tokumei!=""){
-$dsn="ƒf[ƒ^ƒx[ƒX–¼";
-$user="ƒ†[ƒU[–¼";
-$password="ƒpƒXƒ[ƒh";
+$dsn="ãƒ‡ãƒ¼ã‚¿ãƒ™ãƒ¼ã‚¹å";
+$user="ãƒ¦ãƒ¼ã‚¶ãƒ¼å";
+$password="ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰";
 $pdo=new PDO($dsn,$user,$password);
 $sql="SELECT MAX(id) FROM tt_623_99sv_coco_com.makekeiji$tablenum";
 $result=$pdo->query($sql);
@@ -1369,13 +1369,13 @@ $sql->bindParam(":date",$date,PDO::PARAM_STR);
 $sql->bindParam(":tokumei",$tokumei1,PDO::PARAM_STR);
 $sql->bindParam(":hensin",$to,PDO::PARAM_STR);
 $sql->execute();
-echo "•ÔM‚ªŠ®—¹‚µ‚Ü‚µ‚½";
+echo "è¿”ä¿¡ãŒå®Œäº†ã—ã¾ã—ãŸ";
 }else{
 if($comment==""){
-echo "<font color='#ff0000'>•ÔM“à—e‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢</font><br>";
+echo "<font color='#ff0000'>è¿”ä¿¡å†…å®¹ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„</font><br>";
 }
 if($tokumei==""){
-echo "<font color='#ff0000'>“½–¼Šó–]‚Ì—L–³‚ð‘I‘ð‚µ‚Ä‚­‚¾‚³‚¢</font><br>";
+echo "<font color='#ff0000'>åŒ¿åå¸Œæœ›ã®æœ‰ç„¡ã‚’é¸æŠžã—ã¦ãã ã•ã„</font><br>";
 }
 }
 }
@@ -1383,33 +1383,72 @@ echo "<font color='#ff0000'>“½–¼Šó–]‚Ì—L–³‚ð‘I‘ð‚µ‚Ä‚­‚¾‚³‚¢</font><br>";
 
 <?php 
 $a=$_POST["a"];
-if($a=="ŒfŽ¦”Â‚É–ß‚é"){
+if($a=="æŽ²ç¤ºæ¿ã«æˆ»ã‚‹"){
 header("location:http://tt-623.99sv-coco.com/mission_6-8.php");
 }
 ?>
 
 
 
-<div style="width: 100%; color:white; background-color:#afeeee;"><a href="#a">V‹K“Še‚ÍƒRƒ`ƒ‰‚©‚ç</a><br>
-<a href="http://tt-623.99sv-coco.com/mission_6-3.php"><?php echo $SESSION['pre'];?>ŒÀ’èŒfŽ¦”Â‚ðŒ©‚é</a><br>
-<a href="http://tt-623.99sv-coco.com/mission_6-3.php">‘S‘”ÅŒfŽ¦”Â‚ðŒ©‚é</a><br>
-<a href="http://tt-623.99sv-coco.com/mission_6-7.php">V‚µ‚¢ŒfŽ¦”Â‚ðì¬‚·‚é</a><br>
-<a href="http://tt-623.99sv-coco.com/mission_6-6.php">ƒ}ƒCƒAƒJƒEƒ“ƒg</a><br>
-<a href="http://tt-623.99sv-coco.com/mission_6-3.php#111">ƒƒOƒAƒEƒg</a></div>
+<div style="width: 100%; color:white; background-color:#afeeee;"><a href="#a">æ–°è¦æŠ•ç¨¿ã¯ã‚³ãƒãƒ©ã‹ã‚‰</a><br>
+<a href="http://tt-623.99sv-coco.com/mission_6-3.php"><?php echo $SESSION['pre'];?>é™å®šæŽ²ç¤ºæ¿ã‚’è¦‹ã‚‹</a><br>
+<a href="http://tt-623.99sv-coco.com/mission_6-3.php">å…¨å›½ç‰ˆæŽ²ç¤ºæ¿ã‚’è¦‹ã‚‹</a><br>
+<a href="http://tt-623.99sv-coco.com/mission_6-7.php">æ–°ã—ã„æŽ²ç¤ºæ¿ã‚’ä½œæˆã™ã‚‹</a><br>
+<a href="http://tt-623.99sv-coco.com/mission_6-6.php">ãƒžã‚¤ã‚¢ã‚«ã‚¦ãƒ³ãƒˆ</a><br>
+<a href="http://tt-623.99sv-coco.com/mission_6-3.php#111">ãƒ­ã‚°ã‚¢ã‚¦ãƒˆ</a></div>
 
-<div style="width:100%; color:white; background-color:#90ee90;"><h2>•ÔMƒtƒH[ƒ€</h2></div>
+<div style="width:100%; color:white; background-color:#90ee90;"><h2>è¿”ä¿¡ãƒ•ã‚©ãƒ¼ãƒ </h2></div>
 <form action="mission_6-9.php" method="post">
-<textarea name="comment" cols="50" rows="5" placeholder="•ÔM‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢"></textarea>
-<input type="reset" value="Žæ‚èÁ‚µ"><br>
-<input type="radio" name="tokumei" value="tokumei">“½–¼Šó–]
-<input type="radio" name="tokumei" value="notokumei">“½–¼‚ðŠó–]‚µ‚È‚¢<br>
-<input type="submit" name="submit" value="•ÔM‚·‚é">
+<textarea name="comment" cols="50" rows="5" placeholder="è¿”ä¿¡ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„"></textarea>
+<input type="reset" value="å–ã‚Šæ¶ˆã—"><br>
+<input type="radio" name="tokumei" value="tokumei">åŒ¿åå¸Œæœ›
+<input type="radio" name="tokumei" value="notokumei">åŒ¿åã‚’å¸Œæœ›ã—ãªã„<br>
+<input type="submit" name="submit" value="è¿”ä¿¡ã™ã‚‹">
 </form>
 <br>
 <br>
 <br>
 <form action="mission_6-9.php" method="post">
-<input type="submit" name="a" value="ŒfŽ¦”Â‚É–ß‚é">
+<input type="submit" name="a" value="æŽ²ç¤ºæ¿ã«æˆ»ã‚‹">
 </form>
+
+<?php //ã€mission_createtb.phpï¼ˆãƒ†ãƒ¼ãƒ–ãƒ«ä½œæˆï¼‰ã€‘
+$dsn="ãƒ‡ãƒ¼ã‚¿ãƒ™ãƒ¼ã‚¹å";
+$user="ãƒ¦ãƒ¼ã‚¶ãƒ¼å";
+$password="ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰";
+$pdo=new PDO($dsn,$user,$password);
+$sql="CREATE TABLE keijiban1(number INT(11),pre char(15),name char(32),adress char(64),password char(32))";
+$stmt=$pdo->query($sql);
+?>
+
+<?php
+$dsn="ãƒ‡ãƒ¼ã‚¿ãƒ™ãƒ¼ã‚¹å";
+$user="ãƒ¦ãƒ¼ã‚¶ãƒ¼å";
+$password="ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰";
+$pdo=new PDO($dsn,$user,$password);
+$sql="CREATE TABLE keijiban3(number INT(11),name char(32),pre char(32),comment TEXT,date char(32),gentei INT(11),tokumei INT(11))";
+$stmt=$pdo->query($sql);
+?>
+
+<?php
+$dsn="ãƒ‡ãƒ¼ã‚¿ãƒ™ãƒ¼ã‚¹å";
+$user="ãƒ¦ãƒ¼ã‚¶ãƒ¼å";
+$password="ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰";
+$pdo=new PDO($dsn,$user,$password);
+$sql="CREATE TABLE reply(reply INT(11),aite INT(11),num INT(11),number INT(11),name char(32),comment TEXT,date char(32),tokumei INT(11))";
+$stmt=$pdo->query($sql);
+?>
+
+<?php 
+$dsn="ãƒ‡ãƒ¼ã‚¿ãƒ™ãƒ¼ã‚¹å";
+$user="ãƒ¦ãƒ¼ã‚¶ãƒ¼å";
+$password="ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰";
+$pdo=new PDO($dsn,$user,$password);
+$sql="CREATE TABLE tt_623_99sv_coco_com.keijiname(
+id INT(11),
+name char(32),
+syoukai TEXT)";
+$stmt=$pdo->query($sql);
+?>
 
 
